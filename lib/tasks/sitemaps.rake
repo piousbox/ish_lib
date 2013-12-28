@@ -4,7 +4,8 @@ namespace :sitemaps do
   
   desc 'generate'
   task :generate => :environment do
-    SitemapsTasks.generate
+    s = SitemapsTasks.new
+    s.generate
   end
 
 end

@@ -1,11 +1,18 @@
 require 'rubygems'
 require 'builder'
 
-class SitemapsTasks
+class SitemapsTasks < ActionController::Base
   
   include Rails.application.routes.url_helpers
-  
-  def self.generate
+  default_url_options[:host] = "travel-guide.mobi"
+  include ActionView::Helpers
+  helper :all
+
+  def pretty_date args
+    args.strftime('%Y-%m-%d')
+  end
+
+  def generate
     travel_site = Site.mobi
     travel_tag = Tag.mobi
 
@@ -40,7 +47,7 @@ class SitemapsTasks
 
       @reports.each do |report|
         xml.url do
-          xml.loc "http://#{@host}/en#{report_path(report.name_seo)}"
+          xml.loc "http://#{@host}/en/reports/view/#{report.name_seo}"
           xml.lastmod pretty_date report.created_at
         end
       end
@@ -54,35 +61,35 @@ class SitemapsTasks
       
       @cities.each do |c|
         xml.url do
-          xml.loc "http://#{@host + city_path(c.cityname)}"
+          xml.loc "http://#{@host}/en/cities/travel-to/#{c.cityname}"
           xml.lastmod pretty_date c.created_at
         end
       end
       
       @tags.each do |c|
         xml.url do
-          xml.loc "http://#{@host + tag_path(c.name_seo)}"
+          xml.loc "http://#{@host}/en/tags/show/#{c.name_seo}"
           xml.lastmod pretty_date c.created_at
         end
       end
       
       @users.each do |user|
         xml.url do
-          xml.loc "http://#{@host + user_path(user.username)}"
+          xml.loc "http://#{@host}/en/users/show/#{user.username}"
           xml.lastmod pretty_date user.created_at
         end
       end
       
       @venues.each do |c|
         xml.url do
-          xml.loc "http://#{@host}/en#{venue_path(c.name_seo)}"
+          xml.loc "http://#{@host}/en/venues/show/#{c.name_seo}"
           xml.lastmod pretty_date c.created_at
         end
       end
 
       # @meta.each do |m|
       #   xml.url do
-      #     xml.loc "http://#{request.host_with_port}#{m[:url]}"
+      #     xml.loc "http://#{@host}#{m[:url]}"
       #     xml.lastmod pretty_date Time.now
       #   end
       # end
@@ -90,7 +97,7 @@ class SitemapsTasks
     end
 
     File.open( 'sitemap.xml', 'w' ) do |f|
-      f.write builder
+      f.write xml
     end
     
   end
