@@ -3,13 +3,14 @@ require 'builder'
 
 class SitemapsTasks < ActionController::Base
   
-  include Rails.application.routes.url_helpers
-  default_url_options[:host] = "travel-guide.mobi"
-  include ActionView::Helpers
-  helper :all
-
   def pretty_date args
     args.strftime('%Y-%m-%d')
+  end
+
+  def initialize args = {}
+    @host = args[:domain]
+    @lang = args[:lang]
+    @verbose = args[:verbose]
   end
 
   def generate
@@ -36,7 +37,6 @@ class SitemapsTasks < ActionController::Base
 
     # @meta = [ { :url => cities_path } ]
     @meta = []
-    @host = 'travel-guide.mobi'
 
     #
     # the (builder) view
@@ -47,42 +47,43 @@ class SitemapsTasks < ActionController::Base
 
       @reports.each do |report|
         xml.url do
-          xml.loc "http://#{@host}/en/reports/view/#{report.name_seo}"
-          xml.lastmod pretty_date report.created_at
+          xml.loc "http://#{@host}/#{@lang}/reports/view/#{report.name_seo}"
+          xml.lastmod self.pretty_date report.created_at
         end
       end
       
       @galleries.each do |g|
         xml.url do
-          xml.loc "http://#{@host + gallery_path(g.galleryname, 0)}"
+          xml.loc "http://#{@host}/#{@lang}/galleries/show/#{g.galleryname}"
           xml.lastmod pretty_date g.created_at
         end
       end
       
       @cities.each do |c|
+        puts "City: #{c.name}" if @verbose
         xml.url do
-          xml.loc "http://#{@host}/en/cities/travel-to/#{c.cityname}"
+          xml.loc "http://#{@host}/#{@lang}/cities/travel-to/#{c.cityname}"
           xml.lastmod pretty_date c.created_at
         end
       end
       
       @tags.each do |c|
         xml.url do
-          xml.loc "http://#{@host}/en/tags/show/#{c.name_seo}"
+          xml.loc "http://#{@host}/#{@lang}/tags/show/#{c.name_seo}"
           xml.lastmod pretty_date c.created_at
         end
       end
       
       @users.each do |user|
         xml.url do
-          xml.loc "http://#{@host}/en/users/show/#{user.username}"
+          xml.loc "http://#{@host}/#{@lang}/users/show/#{user.username}"
           xml.lastmod pretty_date user.created_at
         end
       end
       
       @venues.each do |c|
         xml.url do
-          xml.loc "http://#{@host}/en/venues/show/#{c.name_seo}"
+          xml.loc "http://#{@host}/#{@lang}/venues/show/#{c.name_seo}"
           xml.lastmod pretty_date c.created_at
         end
       end
