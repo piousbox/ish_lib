@@ -10,8 +10,7 @@ class WikitravelTasks
     args[:domain] ||= 'travel-guide.mobi'
 
     @site = Site.where( :domain => args[:domain], :lang => args[:lang] ).first
-    @user = self.find_or_create_wiki_user
-    @travel_tag = self.find_or_create_travel_tag
+    @user = WikitravelTasks.find_or_create_wiki_user
   end
 
   def all_pages_to_report_and_newsitems
@@ -39,7 +38,7 @@ class WikitravelTasks
   #
   # all the wikitravel.org stuff should belong to this user.
   #
-  def find_or_create_wiki_user
+  def self.find_or_create_wiki_user
     u = User.where( :username => 'wikitraveler' ).first
     if u.blank?
       u = User.create({ :username => 'wikitraveler', :name => 'Wikitraveler', :email => 'wiki@traveler.com', 
@@ -53,7 +52,7 @@ class WikitravelTasks
   #
   def self.parse_list_of_pages arg = {}
     arg[:filename] ||= 'wikitravel.org-popular-pages.htm'
-    puts "Attn. parsing wikitravel.org list of pages with filename '#{arg[:filename]}'"
+    puts "Attn. parsing wikitravel.org list of pages with filename '#{arg[:filename]}'" unless Rails.env.test?
 
     index_html_path = Rails.root.join( 'data', arg[:filename] )
     page = Nokogiri::HTML(open(index_html_path))
@@ -62,27 +61,24 @@ class WikitravelTasks
       unless link['href'].include?(':')
         page = WikitravelPage.new :url => link['href'], :title => link['title']
         if page.save
-          puts "Saving page '#{page.title}'"
+          puts "Saving page '#{page.title}'" unless Rails.env.test?
         else
-          puts "Maybe the page '#{page.title}' already exists."
+          puts "Maybe the page '#{page.title}' already exists." unless Rails.env.test?
         end
       end
     end
   end
 
-  def self.find_or_create_travel_tag
+  def travel_tag
     t = Tag.where( :name => 'Travel' ).first
     if t.blank?
-      t = Tag.create( :site => self.find_or_create_travel_site, :name => 'Travel', :name_seo => 'travel' )
+      t = Tag.create( :site => @site, :name => 'Travel', :name_seo => 'travel' )
     end
     return t
-  end 
-
-  private
+  end
 
   def one_page_to_report_and_newsitems random_page
     urll = "#{WikitravelPage::DOMAIN}#{random_page.url}"
-    # puts! urll
     remote_page = Nokogiri::HTML( open( urll ) )
     text = remote_page.css("#mw-content-text tr > td")
     begin
@@ -99,15 +95,9 @@ class WikitravelTasks
     r.descr = text
     r.site = @site
     r.user = @user
-    r.tag = @travel_tag
+    r.tag = travel_tag
     r.save || puts!(r.errors)
     
-    # create newsitem for the site
-    n = Newsitem.new
-    n.report = r
-    @site.newsitems << n
-    @site.save || puts!(@site.errors)
-
     # create newsitem for the city
     nn = Newsitem.new
     nn.report = r
