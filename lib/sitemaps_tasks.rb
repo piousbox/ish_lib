@@ -14,10 +14,10 @@ class SitemapsTasks < ActionController::Base
   end
 
   def generate
-    travel_site = Site.mobi
+    travel_site = Site.where( :domain => @host, :lang => @lang ).first
     travel_tag = Tag.mobi
 
-    @reports = Report.any_of( :site => travel_site, :tag => travel_tag )
+    @reports = Report.or( :site => travel_site )
 
     # @galleries = Gallery.any_of( :site => travel_site, :tag => travel_tag )
     @galleries = []
@@ -46,6 +46,7 @@ class SitemapsTasks < ActionController::Base
     xml.urlset :xmlns => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
 
       @reports.each do |report|
+        puts "Report: #{report.name}" if @verbose
         xml.url do
           xml.loc "http://#{@host}/#{@lang}/reports/view/#{report.name_seo}"
           xml.lastmod self.pretty_date report.created_at
@@ -82,6 +83,7 @@ class SitemapsTasks < ActionController::Base
       end
       
       @venues.each do |c|
+        puts "Venue: #{c.name}" if @verbose
         xml.url do
           xml.loc "http://#{@host}/#{@lang}/venues/show/#{c.name_seo}"
           xml.lastmod pretty_date c.created_at
