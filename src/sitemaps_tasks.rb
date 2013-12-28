@@ -1,7 +1,10 @@
-class Utils::SitemapsController < ApplicationController
-  skip_authorization_check
 
-  def sitemap
+require 'rubygems'
+require 'builder'
+
+class SitemapsTasks
+
+  def self.generate_sitemap
     travel_site = Site.mobi
     travel_tag = Tag.mobi
 
@@ -27,24 +30,12 @@ class Utils::SitemapsController < ApplicationController
     @meta = []
     @host = request.host
 
-    respond_to do |format|
-      format.xml do
-        headers['Content-Type'] = 'application/xml'
-        render 'utils/sitemap', :layout => false
-      end
-      format.json do
-        json = {
-          :cities => @cities,
-          :reports => @reports.to_a,
-          :galleries => @galleries.to_a,
-          :users => @users,
-          :venues => @venues,
-          :videos => @videos,
-          :tags => @tags
-        }
-        render :json => json
-      end
+    builder = Builder::XmlMarkup.new(:indent=>2)
+    builder.instruct! :xml, :version=>"1.0", :encoding=>"UTF-8"
+    builder.my_elements do |e|
+      builder.myitem {|element| element.my_element_name('element_value')}
     end
+    
   end
 
 end
