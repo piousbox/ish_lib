@@ -1,4 +1,8 @@
+
 require 'wikitravel_tasks'
+
+puts '+++ ++++ a'
+
 namespace :wikitravel do
   
   desc "deprecated? Usage: be rake wikitravel:random_page_to_newsitem domain='mobi.local'"

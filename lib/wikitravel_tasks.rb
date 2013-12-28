@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'open-uri'
 require 'htmlentities'
-require_relative 'string'
+require 'string'
 
 class WikitravelTasks
 
