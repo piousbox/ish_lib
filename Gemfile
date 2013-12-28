@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rake'
+gem 'htmlentities'
+
 group :test do
   # gem 'factory_girl_rails'
   # gem 'minitest'
