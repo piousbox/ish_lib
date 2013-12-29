@@ -77,10 +77,24 @@ class WikitravelTasks
     return t
   end
 
+  def self.cleanup_report report
+    text = report.descr
+
+    text.search('.//script').remove
+    text.search('.//noscript').remove
+    text.search(".//span[contains(@class,'editsection')]").remove
+    text.search(".//table[contains(@class,'toc')]").remove
+    text.search(".//ul[contains(@class,'wt-toc')]").remove
+    text.search(".//div[@id='toctitle']").remove
+    
+    return report
+  end
+
   def one_page_to_report_and_newsitems random_page
     urll = "#{WikitravelPage::DOMAIN}#{random_page.url}"
     remote_page = Nokogiri::HTML( open( urll ) )
     text = remote_page.css("#mw-content-text tr > td")
+
     begin
       subhead = remote_page.css("#mw-content-text tr > td p")[0].text
     rescue
@@ -96,6 +110,8 @@ class WikitravelTasks
     r.site = @site
     r.user = @user
     r.tag = travel_tag
+
+    r = WikitravelTasks.cleanup_report r
     r.save || puts!(r.errors)
     
     # create newsitem for the city
