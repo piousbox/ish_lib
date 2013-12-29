@@ -80,7 +80,7 @@ class WikitravelTasks
   def self.cleanup_report report
     text = report.descr
 
-    text = Nokorigi::HTML( report.descr )
+    text = Nokogiri::HTML( report.descr )
     text.search('.//script').remove
     text.search('.//noscript').remove
     text.search(".//span[contains(@class,'editsection')]").remove

@@ -25,5 +25,16 @@ namespace :wikitravel do
     w.all_pages_to_report_and_newsitems
   end
 
+  desc "Cleanup reports"
+  task :cleanup_reports => :environment do
+    mobi = Site.where( :domain => 'travel-guide.mobi', :lang => 'en' ).first
+    reports = Report.where( :site => mobi )
+    reports.each do |r| 
+      rr = WikitravelTasks.cleanup_report( r )
+      puts "cleaning up #{rr.name}"
+      rr.save
+    end
+  end
+
 end
 
