@@ -13,6 +13,10 @@ class Site
   field :n_features, :type => Integer, :default => 4
   field :n_newsitems, :type => Integer, :default => 20
 
+  # denormalized
+  field :n_reports, :type => Integer
+  field :n_galleries, :type => Integer
+
   field :is_video_enabled, :type => Boolean, :default => false
   field :is_resume_enabled, :type => Boolean, :default => false
   field :is_ads_enabled, :type => Boolean, :default => true

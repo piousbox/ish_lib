@@ -4,5 +4,7 @@
 #
 class Manager
 
+  PHOTOS_PER_PAGE = 100
+
 end
 

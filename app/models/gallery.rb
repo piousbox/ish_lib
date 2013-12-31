@@ -23,6 +23,7 @@ class Gallery < AppModel2
 
   belongs_to :tag
   belongs_to :city
+  belongs_to :venue
     
   set_callback(:create, :before) do |doc|
     doc.username = doc.user.username
