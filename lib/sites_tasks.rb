@@ -9,6 +9,7 @@ class SitesTasks < ActionController::Base
 
   def self.n_reports_galleries
     Site.each do |site|
+      puts! site
       save = false
       if site.n_galleries.blank?
         site.n_galleries = site.galleries.length
@@ -18,7 +19,11 @@ class SitesTasks < ActionController::Base
         site.n_reports = site.reports.length
         save = true
       end
-      site.save && puts( "+++ +++ Site #{site.domain}/#{site.lang}" )
+      if save
+        if site.save
+          puts( "+++ +++ Site #{site.domain}/#{site.lang}" )
+        end
+      end
     end
   end
   
