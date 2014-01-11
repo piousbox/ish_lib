@@ -10,10 +10,15 @@ class Newsitem
   belongs_to :gallery
   belongs_to :video
 
+  field :name, :type => String
+  field :image_path, :type => String
   field :descr, :type => String
   field :username, :type => String
+  field :link_path, :type => String
 
   field :partial_name, :type => String, :default => nil
+
+  default_scope order_by( :created_at => :desc )
 
   def self.from_params item
     n = Newsitem.new

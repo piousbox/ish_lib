@@ -12,6 +12,10 @@ class Ability
         g.user == user
       end
 
+      can [ :new ], Message
+
+      can [ :create ], Newsitem
+
       can [ :upload, :driver, :set_profile_photo, :new_profile_photo ], Photo
       can [ :move, :edit, :update, :show ], Photo do |photo|
         photo.user == user
@@ -44,8 +48,6 @@ class Ability
       end
 
       can [ :new, :create ], Video
-
-      can [ :new ], Message
 
       # manager
       #
@@ -110,7 +112,7 @@ class Ability
       r.is_public && !r.is_trash
     end
        
-    can [ :show, :newsitems, :features ],  Site
+    can [ :show, :newsitems, :features, :newsitems ],  Site
 
     can [ :index ], Tag
     can [ :show ], Tag do |t|

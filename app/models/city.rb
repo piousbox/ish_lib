@@ -95,6 +95,10 @@ class City
     end
     return cities
   end
+
+  def self.feature
+    City.where( :is_feature => true )
+  end
   
 end
 
