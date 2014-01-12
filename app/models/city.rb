@@ -35,10 +35,13 @@ class City
   has_one :guide, :class_name => 'User', :inverse_of => :guide_city
   has_many :current_users, :class_name => 'User', :inverse_of => :current_city
 
-  embeds_many :newsitems
+  embeds_many :newsitems, cascade_callbacks: true
+  accepts_nested_attributes_for :newsitems
+  # @TODO @deprecated, I wish I don't use it.
   field :n_newsitems, :type => Integer, :default => 16
 
   embeds_many :features
+  # @TODO @deprecated, I wish I don't use it.
   field :n_features, :type => Integer, :default => 4
 
   field :calendar_frame, :type => String

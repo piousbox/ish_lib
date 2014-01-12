@@ -1,9 +1,11 @@
 class Newsitem
   include Mongoid::Document
   include Mongoid::Timestamps
+  include Mongoid::Paranoia
   
   embedded_in :user
   embedded_in :site
+  embedded_in :city
 
   belongs_to :photo
   belongs_to :report
@@ -15,7 +17,6 @@ class Newsitem
   field :descr, :type => String
   field :username, :type => String
   field :link_path, :type => String
-
   field :partial_name, :type => String, :default => nil
 
   default_scope order_by( :created_at => :desc )

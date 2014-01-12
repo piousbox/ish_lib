@@ -20,6 +20,7 @@ class Feature
 
   embedded_in :venue
   embedded_in :site
+  embedded_in :city
 
   def self.all
     self.order_by( :created_at => :desc )

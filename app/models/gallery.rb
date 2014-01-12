@@ -8,6 +8,7 @@ class Gallery < AppModel2
   field :username, :type => String
   
   field :name, :type => String
+  validates :name, :uniqueness => true, :allow_nil => false
 
   field :galleryname, :type => String
   validates :galleryname, :uniqueness => true, :allow_nil => false
