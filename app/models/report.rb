@@ -13,7 +13,7 @@ class Report
   field :descr, :type => String 
 
   field :is_trash, :type => Boolean, :default => false
-  index({ :is_trash => 1, :is_public => 1 }, { :name => "default_index", :background => true })
+  index({ :is_trash => 1, :is_public => 1 }, { :name => "default_index" })
 
   field :is_public, :type => Boolean, :default => true
   index({ :is_public => 1 }, { :name => "is_public_index" })
@@ -29,7 +29,7 @@ class Report
   field :y, :type => Float
 
   field :lang, :type => String, :default => 'en'
-  index({ :land => 1 }, { :name => "lang_index" })
+  index({ :lang => 1 }, { :name => "lang_index" })
    
   field :username, :type => String, :default => 'anonymous'
   validates :username, :presence => true, :allow_nil => false
@@ -50,7 +50,7 @@ class Report
   field :n_upvotes, :default => 0
   field :n_spamvotes, :default => 0
 
-  # default_scope where( :is_public => true, :is_trash => false ).order_by( :created_at => :desc )
+  default_scope where( :is_public => true, :is_trash => false ).order_by( :created_at => :desc )
   
   def self.list conditions = { :is_trash => false }
     out = self.where( conditions ).order_by( :name => :asc ).limit( 100 )

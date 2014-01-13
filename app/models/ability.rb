@@ -47,6 +47,8 @@ class Ability
         uu == user
       end
 
+      can [ :new ], Venue
+
       can [ :new, :create ], Video
 
       # manager

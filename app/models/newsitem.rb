@@ -13,11 +13,18 @@ class Newsitem
   belongs_to :video
 
   field :name, :type => String
-  field :image_path, :type => String
   field :descr, :type => String
-  field :username, :type => String
+  field :image_path, :type => String
   field :link_path, :type => String
-  field :partial_name, :type => String, :default => nil
+  field :username, :type => String # @TODO do I use this???
+  field :partial_name, :type => String, :default => nil  # @deprecated, but let's not remove it.
+
+  field :weight, :type => Integer, :default => 10
+  field :n_upvotes, :type => Integer, :default => 0
+  field :n_downvotes, :type => Integer, :default => 0
+  field :upvoting_users, :type => Array, :default => []
+  field :downvoting_users, :type => Array, :default => []
+  field :is_feature, :type => Boolean, :default => false
 
   default_scope order_by( :created_at => :desc )
 
