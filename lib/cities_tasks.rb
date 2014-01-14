@@ -52,14 +52,17 @@ class CitiesTasks
 
       # galleries
       city.galleries.each do |g|
-        if city.newsitems.where( :name => g.name ).first.blank?
-          begin
-            image_path = g.photos[0].photo.url(:thumb)
-          rescue
-            image_path = nil
-          end
-          city.newsitems << Newsitem.new({ :name => g.name, :link_path => gallery_path( g ), :descr => g.descr,
+        begin
+          image_path = g.photos[0].photo.url(:thumb)
+        rescue
+          image_path = nil
+        end
+        newsitem = city.newsitems.where( :name => g.name ).first
+        if newsitem.blank?
+          city.newsitems << Newsitem.new({ :name => g.name, :link_path => "http://piousbox.com/en/galleries/show/#{g.galleryname}/0", :descr => g.descr,
                                            :username => (g.user || User.new ).username, :image_path => image_path })
+        else
+          newsitem[:link_path] = "http://piousbox.com/en/galleries/show/#{g.galleryname}/0"
         end
       end
       
