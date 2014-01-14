@@ -96,7 +96,9 @@ class Ability
     ### applies to all users
     ###
     
-    can [ :index, :search, :not_found, :set_show_style ], Gallery
+    can [ :new ], Event
+
+    can [ :index, :search, :not_found, :set_show_style, :new ], Gallery
     can [ :show ], Gallery do |g|
       g.is_public && !g.is_trash
     end
@@ -109,10 +111,12 @@ class Ability
       photo.is_public && !photo.is_trash
     end
     
-    can [ :index, :search, :not_found ], Report
+    can [ :index, :search, :not_found, :new ], Report
     can [ :show ], Report do |r|
       r.is_public && !r.is_trash
     end
+
+    can [ :new ], Review
        
     can [ :show, :newsitems, :features, :newsitems ],  Site
 
@@ -128,6 +132,8 @@ class Ability
       r.is_public && !r.is_trash
     end
     
+    can [ :new ], Venue
+
     can [ :index, :show, :view ], Video
 
   end
