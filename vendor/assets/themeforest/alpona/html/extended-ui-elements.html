@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpona - A Clean Responsive Flat B3 Admin Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin Panel Template">
+        <!-- styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-alpona.css" rel="stylesheet">
+        <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/jquery.gritter.css" rel="stylesheet">
+        <link href="css/jquery.minicolors.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/jquery.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="scroll-top">
+                <a href="#" class="tip-top" title="Go Top"><i class="icon-arrow-up"></i></a>
+            </div>
+            <!-- TOP BAR -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#" class="left-toggle"><i class="icon-menu-2 "></i></a>
+                            <!-- LOGO -->
+                            <div class="branding">
+                                <a href="index.html"><img src="images/alpona-logo.png" alt="Alpona Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 responsive-notification-mnu">
+                            <ul class="notification-bar">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 10 new notifications</h6>
+                                        </div>
+                                        <ul class="notification-list">
+                                            <li><a href="#" class="clearfix"><i class="icon-star blue"></i><span class="notification-intro">Donec pretium enim vel nisl viverra posuere.<span class="notification-time">8 min ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bell orange"></i><span class="notification-intro">Vestibulum viverra magna vitae dui volutpat dapibus. <span class="notification-time">3 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bolt brown"></i><span class="notification-intro">Fusce eget ipsum in odio consectetur condimentum et id nisl.<span class="notification-time">5 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-ok-sign green"></i><span class="notification-intro">Mauris fringilla metus in mauris molestie tempor <span class="notification-time">8 hours ago</span></span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count-noty">12</span><i class="icon-envelop-opened"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 32 new messages</h6>
+                                        </div>
+                                        <ul class="msg-list">
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/binjal.png"></span><span><i>binjal</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sharmin.png"></span><span><i>sharmin</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/shusi.png"></span><span><i>shusi</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/jamjam.png"></span><span><i>jamjam</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sinha.png"></span><span><i>sinha</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4 clearfix responsive-log-mnu">
+                            <!-- ADMIN DRODOWN MENU -->
+                            <div class="loged-nav pull-right">
+                                <ul class="clearfix">
+                                    <li class="log-nav dropdown pull-right"><a class="dropdown-toggle clearfix" data-toggle="dropdown">
+                                            <span class="pull-left loged-user-name">Sharmin Sultana</span><span class="logged-user-thumb pull-right"><img class="img-circle" src="images/admin-avatar.jpg" alt="Admin"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul class="pull-right">
+                                                <li><a href="#">kjamanebr@gmail.com</a></li>
+                                                <li><a href="#">Edit Profile</a></li>
+                                                <li><a href="#">Inbox</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" class="logout-link"><i class="icon-lock-3"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT BAR -->
+            <div class="left-bar merge-left">
+                <!-- SEARCH BAR -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- LEFT NAV -->
+                <div class="left-nav">
+                    <ul class="side-navigation accordion" id="nav-accordion">
+                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="#"><i class="icon-list-alt"></i>Forms</a>
+                            <ul>
+                                <li><a href="form-elements.html"><i class="icon-double-angle-right"></i>All Form Elements</a></li>
+                                <li><a href="extended-form-elements.html"><i class="icon-double-angle-right"></i> Extended Form Elements <span class="nav-instruction"> Lots of plugins is used here</span></a></li>
+                                <li><a href="form-validation.html"><i class="icon-double-angle-right"></i>Form Validation</a></li>
+                                <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i>Stepy Form</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-table-2"></i>Tables</a>
+                            <ul>
+                                <li><a href="basic-table.html"><i class="icon-double-angle-right"></i> Basic Tables <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="table-themes.html"><i class="icon-double-angle-right"></i> Tables-Theme</a></li>
+                                <li><a href="data-tables.html"><i class="icon-double-angle-right"></i> Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-columns"></i> Grid/Portlets</a>
+                            <ul>
+                                <li><a href="boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Boxy Grid/Portlets <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="non-boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Non Boxy Grid/Portlets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-laptop"></i> Layout &AMP; Dashboard</a>
+                            <ul>
+                                <li><a href="blank-layout.html"><i class="icon-double-angle-right"></i> Blank Layout <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="fixed-topbar.html"><i class="icon-double-angle-right"></i> Fixed Topbar</a></li>
+                                <li><a href="fixed-leftbar.html"><i class="icon-double-angle-right"></i> Fixed Leftbar</a></li>
+                                <li><a href="top-dropdown-menu.html"><i class="icon-double-angle-right"></i> Top Dropdown Menu</a></li>
+                                <li><a href="no-sidebar.html"><i class="icon-double-angle-right"></i> No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-font"></i> Typography</a>
+                            <ul>
+                                <li><a href="typography-boxy.html"><i class="icon-double-angle-right"></i> Boxy Typography <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="typography-non-boxy.html"><i class="icon-double-angle-right"></i> Non Boxy Typography</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-cord"></i> UI Elements</a>
+                            <ul>
+                                <li><a href="bootstrap-ui.html"><i class="icon-double-angle-right"></i> Bootstrap UI <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="jquery-ui.html"><i class="icon-double-angle-right"></i> jQuery UI</a></li>
+                                <li><a href="extended-ui-elements.html"><i class="icon-double-angle-right"></i> Extended Elements<span class="nav-instruction"> More Cool UI elements plugins </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-tools"></i> Components &AMP; Plugins</a>
+                            <ul>
+                                <li><a href="buttons-icons.html"><i class="icon-double-angle-right"></i> Buttons &AMP; Icons</a></li>
+                                <li><a href="wysiwyg.html"><i class="icon-double-angle-right"></i> WYSIWYG Text Editor</a></li>
+                                <li><a href="calendar.html"><i class="icon-double-angle-right"></i> Calendar</a></li>
+                                <li><a href="flot-chart.html"><i class="icon-double-angle-right"></i> Flot Chart</a></li>
+                                <li><a href="google-chart.html"><i class="icon-double-angle-right"></i> Google Chart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-files"></i> Example Pages</a>
+                            <ul>
+                                <li><a href="content-post.html"><i class="icon-double-angle-right"></i> Content Post</a></li>
+                                <li><a href="login.html"><i class="icon-double-angle-right"></i> Login</a></li>
+                                <li><a href="product-list.html"><i class="icon-double-angle-right"></i> Products List</a></li>
+                                <li><a href="gallery.html"><i class="icon-double-angle-right"></i> Gallery Page</a></li>
+                                <li><a href="search-page.html"><i class="icon-double-angle-right"></i> Search Page</a></li>
+                                <li><a href="error-page.html"><i class="icon-double-angle-right"></i> Error Page</a></li>
+                                <li><a href="invoice-page.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SITE CONTAINER -->
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- SHORTCUT BAR -->
+                            <div class="shortcut-bar">
+                                <ul class="shortcut-items">
+                                    <li><a href="#"><span class="count-noty">12</span><i class="icon-screen-3"></i><span class="shortcut-label">Dashboard</span></a></li>
+                                    <li><a href="#"><i class="icon-cogs"></i><span class="shortcut-label">Settings</span></a></li>
+                                    <li><a href="#"><i class="icon-chart"></i><span class="shortcut-label">Statistics</span></a></li>
+                                    <li><a href="#"><i class="icon-users-2"></i><span class="shortcut-label">Users</span></a></li>
+                                    <li><a href="#"><i class="icon-file-8"></i><span class="shortcut-label">Content</span></a></li>
+                                    <li><a href="#"><i class="icon-briefcase"></i><span class="shortcut-label">Media</span></a></li>
+                                    <li><a href="#"><i class="icon-stack-list"></i><span class="shortcut-label">Task List</span></a></li>
+                                    <li><a href="#"><i class="icon-folder"></i><span class="shortcut-label">Files</span></a></li>
+                                    <li><a href="#"><i class="icon-coin"></i><span class="shortcut-label">Income</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="page-header">
+                                <h1><i class="icon-cord"></i> Extended UI Elements <small>More cool UI elements</small></h1>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                <li><a href="#">Library</a></li>
+                                <li class="active">Extended UI Elements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Notifications</h3>
+                            <p>
+                                The super awesome background is just to show you that all notifications are transparent! <em>Tested in: FF 3+, Opera 9, IE7, IE8, Safari 4+</em>
+                            </p>
+                            <ul style=" list-style: none; margin: 0px;">
+                                <li>
+                                    <a href="#" id="add-regular">Add regular notification</a>: Fades out after a certain amount of time, can be set for each notification. </li>
+                                <li>
+                                    <a href="#" id="add-sticky">Add sticky notification</a>: Doesn't run on a fade timer. Just sits there until the user manually removes it by clicking on the (X). </li>
+                                <li>
+                                    <a href="#" id="add-without-image">Add notification without image</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="add-gritter-light">Add a white notification</a>: has a 'gritter-light' class_name applied to it. </li>
+                                <li>
+                                    <a href="#" id="add-with-callbacks">Add notification (with callbacks)</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="add-sticky-with-callbacks">Add a sticky notification (with callbacks)</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="add-max">Add notification with max of 3</a>: If there are 3 messages already on screen, it won't show another one. </li>
+                                <li>
+                                    <a href="#" id="remove-all">Remove all notifications</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="remove-all-with-callbacks">Remove all notifications (with callbacks)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Color Pickers</h3>
+                            <h4>Standard Controls</h4>
+                            <input class="minicolors" type="text" value="#3b98bd">
+                            <h4>Inline Controls</h4>
+                            <input class="inline-minicolors" type="text" value="#3b98bd">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prettify.js"></script>
+        <!--jQuery touch scroll -->
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src='js/jquery.cookie.js'></script>
+        <script src='js/jquery.hoverIntent.minified.js'></script>
+        <!--jQuery leftbar navigation accordion -->
+        <script src='js/jquery.dcjqaccordion.2.7.js'></script>
+        <!--Notifications-->
+        <script src='js/jquery.gritter.js'></script>
+        <!--Color Picker-->
+        <script src="js/jquery.minicolors.js"></script>
+        <!-- Theme common script -->
+        
+        <script src='js/common-script.js'></script>
+        <!--[if lte IE 7]>
+                        <script src="js/font-alpona-ie7.js"></script>
+                        <![endif]-->
+        <script>
+            $(function() {
+                // global setting override
+                /*
+                 $.extend($.gritter.options, {
+                 class_name: 'gritter-light', // for light notifications (can be added directly to $.gritter.add too)
+                 position: 'bottom-left', // possibilities: bottom-left, bottom-right, top-left, top-right
+                 fade_in_speed: 100, // how fast notifications fade in (string or int)
+                 fade_out_speed: 100, // how fast the notices fade out
+                 time: 3000 // hang on the screen for...
+                 });
+                 */
+                $('#add-sticky').click(function() {
+                    var unique_id = $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a sticky notice!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                        // (string | optional) the image to display on the left
+                        image: 'http://s3.amazonaws.com/twitter_production/profile_images/132499022/myface_bigger.jpg',
+                        // (bool | optional) if you want it to fade out on its own or just sit there
+                        sticky: true,
+                        // (int | optional) the time you want it to be alive for before fading out
+                        time: '',
+                        // (string | optional) the class name you want to apply to that specific message
+                        class_name: 'my-sticky-class'
+                    });
+                    // You can have it return a unique id, this can be used to manually remove it later using
+                    /*
+                     setTimeout(function(){
+                     $.gritter.remove(unique_id, {
+                     fade: true,
+                     speed: 'slow'
+                     });
+                     }, 6000)
+                     */
+                    return false;
+                });
+                $('#add-regular').click(function() {
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a regular notice!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                        // (string | optional) the image to display on the left
+                        image: 'http://a0.twimg.com/profile_images/59268975/jquery_avatar_bigger.png',
+                        // (bool | optional) if you want it to fade out on its own or just sit there
+                        sticky: false,
+                        // (int | optional) the time you want it to be alive for before fading out
+                        time: ''
+                    });
+                    return false;
+                });
+                $('#add-max').click(function() {
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a notice with a max of 3 on screen at one time!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                        // (string | optional) the image to display on the left
+                        image: 'http://a0.twimg.com/profile_images/59268975/jquery_avatar_bigger.png',
+                        // (bool | optional) if you want it to fade out on its own or just sit there
+                        sticky: false,
+                        // (function) before the gritter notice is opened
+                        before_open: function() {
+                            if ($('.gritter-item-wrapper').length == 3)
+                            {
+                                // Returning false prevents a new gritter from opening
+                                return false;
+                            }
+                        }
+                    });
+                    return false;
+                });
+                $('#add-without-image').click(function() {
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a notice without an image!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.'
+                    });
+                    return false;
+                });
+                $('#add-gritter-light').click(function() {
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a light notification',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+                        class_name: 'gritter-light'
+                    });
+                    return false;
+                });
+                $('#add-with-callbacks').click(function() {
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a notice with callbacks!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'The callback is...',
+                        // (function | optional) function called before it opens
+                        before_open: function() {
+                            alert('I am called before it opens');
+                        },
+                        // (function | optional) function called after it opens
+                        after_open: function(e) {
+                            alert("I am called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
+                        },
+                        // (function | optional) function called before it closes
+                        before_close: function(e, manual_close) {
+                            var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
+                            alert("I am called before it closes: I am passed the jQuery object for the Gritter element... \n" + manually);
+                        },
+                        // (function | optional) function called after it closes
+                        after_close: function(e, manual_close) {
+                            var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
+                            alert('I am called after it closes. ' + manually);
+                        }
+                    });
+                    return false;
+                });
+                $('#add-sticky-with-callbacks').click(function() {
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'This is a sticky notice with callbacks!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Sticky sticky notice.. sticky sticky notice...',
+                        // Stickeh!
+                        sticky: true,
+                        // (function | optional) function called before it opens
+                        before_open: function() {
+                            alert('I am a sticky called before it opens');
+                        },
+                        // (function | optional) function called after it opens
+                        after_open: function(e) {
+                            alert("I am a sticky called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
+                        },
+                        // (function | optional) function called before it closes
+                        before_close: function(e) {
+                            alert("I am a sticky called before it closes: I am passed the jQuery object for the Gritter element... \n" + e);
+                        },
+                        // (function | optional) function called after it closes
+                        after_close: function() {
+                            alert('I am a sticky called after it closes');
+                        }
+                    });
+                    return false;
+                });
+                $("#remove-all").click(function() {
+                    $.gritter.removeAll();
+                    return false;
+                });
+                $("#remove-all-with-callbacks").click(function() {
+                    $.gritter.removeAll({
+                        before_close: function(e) {
+                            alert("I am called before all notifications are closed.  I am passed the jQuery object containing all  of Gritter notifications.\n" + e);
+                        },
+                        after_close: function() {
+                            alert('I am called after everything has been closed.');
+                        }
+                    });
+                    return false;
+                });
+            });
+            $(function() {
+                $('.minicolors').minicolors();
+                $('.inline-minicolors').minicolors({
+                    inline: true
+                });
+            });
+        </script>
+    </body>
+</html>

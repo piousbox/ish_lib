@@ -1,0 +1,793 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpona - A Clean Responsive Flat B3 Admin Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin Panel Template">
+        <!-- styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-alpona.css" rel="stylesheet">
+        <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--Bootstarp Datepicker -->
+        <link href="css/datepicker.css" rel="stylesheet">
+        <!--Bootstarp Date Range picker -->
+        <link href="css/daterangepicker.css" rel="stylesheet">
+        <!--fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/jquery.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="scroll-top">
+                <a href="#" class="tip-top" title="Go Top"><i class="icon-arrow-up"></i></a>
+            </div>
+            <!-- TOP BAR -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#" class="left-toggle"><i class="icon-menu-2 "></i></a>
+                            <!-- LOGO -->
+                            <div class="branding">
+                                <a href="index.html"><img src="images/alpona-logo.png" alt="Alpona Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 responsive-notification-mnu">
+                            <ul class="notification-bar">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 10 new notifications</h6>
+                                        </div>
+                                        <ul class="notification-list">
+                                            <li><a href="#" class="clearfix"><i class="icon-star blue"></i><span class="notification-intro">Donec pretium enim vel nisl viverra posuere.<span class="notification-time">8 min ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bell orange"></i><span class="notification-intro">Vestibulum viverra magna vitae dui volutpat dapibus. <span class="notification-time">3 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bolt brown"></i><span class="notification-intro">Fusce eget ipsum in odio consectetur condimentum et id nisl.<span class="notification-time">5 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-ok-sign green"></i><span class="notification-intro">Mauris fringilla metus in mauris molestie tempor <span class="notification-time">8 hours ago</span></span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count-noty">12</span><i class="icon-envelop-opened"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 32 new messages</h6>
+                                        </div>
+                                        <ul class="msg-list">
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/binjal.png"></span><span><i>binjal</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sharmin.png"></span><span><i>sharmin</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/shusi.png"></span><span><i>shusi</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/jamjam.png"></span><span><i>jamjam</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sinha.png"></span><span><i>sinha</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4 clearfix responsive-log-mnu">
+                            <!-- ADMIN DRODOWN MENU -->
+                            <div class="loged-nav pull-right">
+                                <ul class="clearfix">
+                                    <li class="log-nav dropdown pull-right"><a class="dropdown-toggle clearfix" data-toggle="dropdown">
+                                            <span class="pull-left loged-user-name">Sharmin Sultana</span><span class="logged-user-thumb pull-right"><img class="img-circle" src="images/admin-avatar.jpg" alt="Admin"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul class="pull-right">
+                                                <li><a href="#">kjamanebr@gmail.com</a></li>
+                                                <li><a href="#">Edit Profile</a></li>
+                                                <li><a href="#">Inbox</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" class="logout-link"><i class="icon-lock-3"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT BAR -->
+            <div class="left-bar merge-left">
+                <!-- SEARCH BAR -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- LEFT NAV -->
+                <div class="left-nav">
+                    <ul class="side-navigation accordion" id="nav-accordion">
+                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="#"><i class="icon-list-alt"></i>Forms</a>
+                            <ul>
+                                <li><a href="form-elements.html"><i class="icon-double-angle-right"></i>All Form Elements</a></li>
+                                <li><a href="extended-form-elements.html"><i class="icon-double-angle-right"></i> Extended Form Elements <span class="nav-instruction"> Lots of plugins is used here</span></a></li>
+                                <li><a href="form-validation.html"><i class="icon-double-angle-right"></i>Form Validation</a></li>
+                                <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i>Stepy Form</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-table-2"></i>Tables</a>
+                            <ul>
+                                <li><a href="basic-table.html"><i class="icon-double-angle-right"></i> Basic Tables <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="table-themes.html"><i class="icon-double-angle-right"></i> Tables-Theme</a></li>
+                                <li><a href="data-tables.html"><i class="icon-double-angle-right"></i> Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-columns"></i> Grid/Portlets</a>
+                            <ul>
+                                <li><a href="boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Boxy Grid/Portlets <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="non-boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Non Boxy Grid/Portlets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-laptop"></i> Layout &AMP; Dashboard</a>
+                            <ul>
+                                <li><a href="blank-layout.html"><i class="icon-double-angle-right"></i> Blank Layout <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="fixed-topbar.html"><i class="icon-double-angle-right"></i> Fixed Topbar</a></li>
+                                <li><a href="fixed-leftbar.html"><i class="icon-double-angle-right"></i> Fixed Leftbar</a></li>
+                                <li><a href="top-dropdown-menu.html"><i class="icon-double-angle-right"></i> Top Dropdown Menu</a></li>
+                                <li><a href="no-sidebar.html"><i class="icon-double-angle-right"></i> No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-font"></i> Typography</a>
+                            <ul>
+                                <li><a href="typography-boxy.html"><i class="icon-double-angle-right"></i> Boxy Typography <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="typography-non-boxy.html"><i class="icon-double-angle-right"></i> Non Boxy Typography</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-cord"></i> UI Elements</a>
+                            <ul>
+                                <li><a href="bootstrap-ui.html"><i class="icon-double-angle-right"></i> Bootstrap UI <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="jquery-ui.html"><i class="icon-double-angle-right"></i> jQuery UI</a></li>
+                                <li><a href="extended-ui-elements.html"><i class="icon-double-angle-right"></i> Extended Elements<span class="nav-instruction"> More Cool UI elements plugins </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-tools"></i> Components &AMP; Plugins</a>
+                            <ul>
+                                <li><a href="buttons-icons.html"><i class="icon-double-angle-right"></i> Buttons &AMP; Icons</a></li>
+                                <li><a href="wysiwyg.html"><i class="icon-double-angle-right"></i> WYSIWYG Text Editor</a></li>
+                                <li><a href="calendar.html"><i class="icon-double-angle-right"></i> Calendar</a></li>
+                                <li><a href="flot-chart.html"><i class="icon-double-angle-right"></i> Flot Chart</a></li>
+                                <li><a href="google-chart.html"><i class="icon-double-angle-right"></i> Google Chart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-files"></i> Example Pages</a>
+                            <ul>
+                                <li><a href="content-post.html"><i class="icon-double-angle-right"></i> Content Post</a></li>
+                                <li><a href="login.html"><i class="icon-double-angle-right"></i> Login</a></li>
+                                <li><a href="product-list.html"><i class="icon-double-angle-right"></i> Products List</a></li>
+                                <li><a href="gallery.html"><i class="icon-double-angle-right"></i> Gallery Page</a></li>
+                                <li><a href="search-page.html"><i class="icon-double-angle-right"></i> Search Page</a></li>
+                                <li><a href="error-page.html"><i class="icon-double-angle-right"></i> Error Page</a></li>
+                                <li><a href="invoice-page.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SITE CONTAINER -->
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- SHORTCUT BAR -->
+                            <div class="shortcut-bar">
+                                <ul class="shortcut-items">
+                                    <li><a href="#"><span class="count-noty">12</span><i class="icon-screen-3"></i><span class="shortcut-label">Dashboard</span></a></li>
+                                    <li><a href="#"><i class="icon-cogs"></i><span class="shortcut-label">Settings</span></a></li>
+                                    <li><a href="#"><i class="icon-chart"></i><span class="shortcut-label">Statistics</span></a></li>
+                                    <li><a href="#"><i class="icon-users-2"></i><span class="shortcut-label">Users</span></a></li>
+                                    <li><a href="#"><i class="icon-file-8"></i><span class="shortcut-label">Content</span></a></li>
+                                    <li><a href="#"><i class="icon-briefcase"></i><span class="shortcut-label">Media</span></a></li>
+                                    <li><a href="#"><i class="icon-stack-list"></i><span class="shortcut-label">Task List</span></a></li>
+                                    <li><a href="#"><i class="icon-folder"></i><span class="shortcut-label">Files</span></a></li>
+                                    <li><a href="#"><i class="icon-coin"></i><span class="shortcut-label">Income</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="page-header">
+                                <h1><i class="icon-cord"></i> Bootstrap UI Elements</h1>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                <li><a href="#">Library</a></li>
+                                <li class="active">Bootstrap UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Progress Bar</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <h3>Default</h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                            <h3>Stripped</h3>
+                                            <div class="progress progress-striped">
+                                                <div style="width: 40%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-success">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-striped">
+                                                <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-info">
+                                                    <span class="sr-only">20% Complete</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-striped">
+                                                <div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-warning">
+                                                    <span class="sr-only">60% Complete (warning)</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-striped">
+                                                <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar progress-bar-danger">
+                                                    <span class="sr-only">80% Complete (danger)</span>
+                                                </div>
+                                            </div>
+                                            <h3>Animated</h3>
+                                            <div class="progress progress-striped active">
+                                                <div style="width: 40%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-success">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-striped active">
+                                                <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-info">
+                                                    <span class="sr-only">20% Complete</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-striped active">
+                                                <div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-warning">
+                                                    <span class="sr-only">60% Complete (warning)</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-striped active">
+                                                <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar progress-bar-danger">
+                                                    <span class="sr-only">80% Complete (danger)</span>
+                                                </div>
+                                            </div>
+                                            <h3>Stacked</h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" style="width: 35%">
+                                                    <span class="sr-only">35% Complete (success)</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-warning" style="width: 20%">
+                                                    <span class="sr-only">20% Complete (warning)</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" style="width: 10%">
+                                                    <span class="sr-only">10% Complete (danger)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Notifications</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <div class="alert alert-success">
+                                                <strong>Well done!</strong> You successfully read this important alert message.
+                                            </div>
+                                            <div class="alert alert-info">
+                                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                            </div>
+                                            <div class="alert alert-warning">
+                                                <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                                            </div>
+                                            <div class="alert alert-danger">
+                                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                            </div>
+                                            <div class="alert alert-block alert-danger fade in">
+                                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                                <h4>Oh snap! You got an error!</h4>
+                                                <p>
+                                                    Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+                                                </p>
+                                                <p>
+                                                    <a href="#" class="btn btn-danger">Take this action</a><a href="#" class="btn btn-default">Or do this</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Tooltips</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <ul class="elem-list-style">
+                                                <li class="tooltip-top"><a href="#" title="Tooltip on top">Tooltip on top</a></li>
+                                                <li class="tooltip-right"><a href="#" title="Tooltip on right">Tooltip on right</a></li>
+                                                <li class="tooltip-bottom"><a href="#" title="Tooltip on bottom">Tooltip on bottom</a></li>
+                                                <li class="tooltip-left"><a href="#" title="Tooltip on left">Tooltip on left</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Popover</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <a id="popup" data-content="And here's some amazing content. It's very engaging. right?" class="btn btn-large btn-danger" href="#" data-original-title="A Title">Click to toggle popover</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Breadcrumb</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <ul class="breadcrumb">
+                                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                                <li><a href="#">Library</a></li>
+                                            </ul>
+                                            <ul class="breadcrumb">
+                                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                                <li><a href="#">Library</a></li>
+                                                <li class="active">Data</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Pagination</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div>
+                                                <ul class="pagination">
+                                                    <li><a href="#">Prev</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">Next</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Date Picker</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Date Picker</label>
+                                                        <div class="col-lg-8">
+                                                            <input class="form-control" type="text" id="dp2" data-date-format="mm/dd/yy" value="02/16/12">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Check in:</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" id="dpd1" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Check out:</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" id="dpd2" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label" for="reservation">Date range:</label>
+                                                        <div class="col-lg-8">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                                                                <input type="text" placeholder="Date" class="form-control" name="reservation" id="daterange">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Reservation dates:</label>
+                                                        <div class="col-lg-8">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                                                                <input type="text" placeholder="Date" class="form-control" name="reservation" id="reservation" value="03/18/2013 - 03/23/2013">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Report Range</label>
+                                                        <div class="col-lg-8">
+                                                            <div class='clearfix'>
+                                                                <div id="reportrange" class="pull-left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                                                                    <i class="icon-calendar icon-large"></i>
+                                                                    <span></span><b class="caret"></b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Reservation dates:</label>
+                                                        <div class="col-lg-8">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                                                                <input type="text" class="form-control" name="reservation" id="limited" value="03/18/2013 - 03/21/2013"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Accordion</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div class="panel-group" id="accordion">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                                Collapsible Group Item #1 </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                                Collapsible Group Item #2 </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                                Collapsible Group Item #3 </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseThree" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Label</h3>
+                            <span class="label label-default">Default</span>
+                            <span class="label label-primary">Primary</span>
+                            <span class="label label-success">Success</span>
+                            <span class="label label-info">Info</span>
+                            <span class="label label-warning">Warning</span>
+                            <span class="label label-danger">Danger</span>
+                            <h3>Badge</h3>
+                            <a href="#">Inbox <span class="badge">42</span></a>
+                            <h3>Navbar with dropdown</h3>
+                            <nav class="navbar navbar-default" role="navigation">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Brand</a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link</a></li>
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </nav>
+                            <h3>Tab</h3>
+                            <div>
+                                <ul class="nav nav-tabs" id="myTab">
+                                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                                    <li class=""><a data-toggle="tab" href="#profile">Profile</a></li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop1" href="#">Dropdown <b class="caret"></b></a>
+                                        <ul aria-labelledby="myTabDrop1" role="menu" class="dropdown-menu">
+                                            <li><a data-toggle="tab" tabindex="-1" href="#dropdown1">@fat</a></li>
+                                            <li><a data-toggle="tab" tabindex="-1" href="#dropdown2">@mdo</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div id="home" class="tab-pane fade active in">
+                                        <p>
+                                            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                        </p>
+                                    </div>
+                                    <div id="profile" class="tab-pane fade">
+                                        <p>
+                                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                                        </p>
+                                    </div>
+                                    <div id="dropdown1" class="tab-pane fade">
+                                        <p>
+                                            Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+                                        </p>
+                                    </div>
+                                    <div id="dropdown2" class="tab-pane fade">
+                                        <p>
+                                            Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prettify.js"></script>
+        <!--jQuery touch scroll -->
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src='js/jquery.cookie.js'></script>
+        <script src='js/jquery.hoverIntent.minified.js'></script>
+        <!--jQuery leftbar navigation accordion -->
+        <script src='js/jquery.dcjqaccordion.2.7.js'></script>
+        <!--jQuery bootstarp Datepicker -->
+        <script src='js/bootstrap-datepicker.js'></script>
+        <!--jQuery bootstarp Date Range picker -->
+        <script src='js/daterangepicker.js'></script>
+        <script src='js/moment.js'></script>
+        <!-- Theme common script -->
+        
+        <script src='js/common-script.js'></script>
+        <!--[if lte IE 7]>
+                        <script src="js/font-alpona-ie7.js"></script>
+                        <![endif]-->
+        <script>
+            $(function() {
+                /*==TOOLTIP==*/
+                $('.tooltip-top a').tooltip({
+                    placement: 'top'
+                });
+                $('.tooltip-left a').tooltip({
+                    placement: 'left'
+                });
+                $('.tooltip-right a').tooltip({
+                    placement: 'right'
+                });
+                $('.tooltip-bottom a').tooltip({
+                    placement: 'bottom'
+                });
+                /*==POP OVER==*/
+                $('#popup').popover({
+                    placement: 'top'
+                });
+                /*==DATE PICKER==*/
+                $('#dp1').datepicker({
+                    format: 'mm-dd-yyyy'
+                });
+                $('#dp2').datepicker();
+                $('#dpYears').datepicker();
+                $('#dpMonths').datepicker();
+            });
+            /*==RANGE DATE PICKER==*/
+            $(function() {
+                $('#daterange').daterangepicker(
+                        {
+                            minDate: '01/01/2010',
+                            maxDate: '12/31/2015',
+                            showDropdowns: true
+                        }
+                );
+            });
+            $(function() {
+                $('#reservation').daterangepicker();
+            });
+            $(function() {
+                $('#limited').daterangepicker(
+                        {
+                            dateLimit: {days: 3}
+                        });
+            });
+            /*==REPORT RANGE DATE PICKER==*/
+            $(function() {
+                $('#reportrange').daterangepicker(
+                        {
+                            ranges: {
+                                'Today': [new Date(), new Date()],
+                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                                'Last 7 Days': [moment().subtract('days', 6), new Date()],
+                                'Last 30 Days': [moment().subtract('days', 29), new Date()],
+                                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+                            },
+                            opens: 'left',
+                            format: 'MM/DD/YYYY',
+                            separator: ' to ',
+                            startDate: moment().subtract('days', 29),
+                            endDate: new Date(),
+                            minDate: '01/01/2012',
+                            maxDate: '12/31/2013',
+                            locale: {
+                                applyLabel: 'Submit',
+                                fromLabel: 'From',
+                                toLabel: 'To',
+                                customRangeLabel: 'Custom Range',
+                                daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                                monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                                firstDay: 1
+                            },
+                            showWeekNumbers: true,
+                            buttonClasses: ['btn-danger'],
+                            dateLimit: false
+                        },
+                function(start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                }
+                );
+                //Set the initial state of the picker label
+                $('#reportrange span').html(moment().subtract('days', 29).format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+            });
+            $(function() {
+                var nowTemp = new Date();
+                var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+                var checkin = $('#dpd1').datepicker({
+                    onRender: function(date) {
+                        return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                    }
+                }).on('changeDate', function(ev) {
+                    if (ev.date.valueOf() > checkout.date.valueOf()) {
+                        var newDate = new Date(ev.date)
+                        newDate.setDate(newDate.getDate() + 1);
+                        checkout.setValue(newDate);
+                    }
+                    checkin.hide();
+                    $('#dpd2')[0].focus();
+                }).data('datepicker');
+                var checkout = $('#dpd2').datepicker({
+                    onRender: function(date) {
+                        return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                    }
+                }).on('changeDate', function(ev) {
+                    checkout.hide();
+                }).data('datepicker');
+            });
+        </script>
+    </body>
+</html>

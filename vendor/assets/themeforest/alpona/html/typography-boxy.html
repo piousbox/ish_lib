@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpona - A Clean Responsive Flat B3 Admin Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin Panel Template">
+        <!-- styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-alpona.css" rel="stylesheet">
+        <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/jquery.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="scroll-top">
+                <a href="#" class="tip-top" title="Go Top"><i class="icon-arrow-up"></i></a>
+            </div>
+            <!-- TOP BAR -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#" class="left-toggle"><i class="icon-menu-2 "></i></a>
+                            <!-- LOGO -->
+                            <div class="branding">
+                                <a href="index.html"><img src="images/alpona-logo.png" alt="Alpona Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 responsive-notification-mnu">
+                            <ul class="notification-bar">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 10 new notifications</h6>
+                                        </div>
+                                        <ul class="notification-list">
+                                            <li><a href="#" class="clearfix"><i class="icon-star blue"></i><span class="notification-intro">Donec pretium enim vel nisl viverra posuere.<span class="notification-time">8 min ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bell orange"></i><span class="notification-intro">Vestibulum viverra magna vitae dui volutpat dapibus. <span class="notification-time">3 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bolt brown"></i><span class="notification-intro">Fusce eget ipsum in odio consectetur condimentum et id nisl.<span class="notification-time">5 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-ok-sign green"></i><span class="notification-intro">Mauris fringilla metus in mauris molestie tempor <span class="notification-time">8 hours ago</span></span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count-noty">12</span><i class="icon-envelop-opened"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 32 new messages</h6>
+                                        </div>
+                                        <ul class="msg-list">
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/binjal.png"></span><span><i>binjal</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sharmin.png"></span><span><i>sharmin</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/shusi.png"></span><span><i>shusi</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/jamjam.png"></span><span><i>jamjam</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sinha.png"></span><span><i>sinha</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4 clearfix responsive-log-mnu">
+                            <!-- ADMIN DRODOWN MENU -->
+                            <div class="loged-nav pull-right">
+                                <ul class="clearfix">
+                                    <li class="log-nav dropdown pull-right"><a class="dropdown-toggle clearfix" data-toggle="dropdown">
+                                            <span class="pull-left loged-user-name">Sharmin Sultana</span><span class="logged-user-thumb pull-right"><img class="img-circle" src="images/admin-avatar.jpg" alt="Admin"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul class="pull-right">
+                                                <li><a href="#">kjamanebr@gmail.com</a></li>
+                                                <li><a href="#">Edit Profile</a></li>
+                                                <li><a href="#">Inbox</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" class="logout-link"><i class="icon-lock-3"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT BAR -->
+            <div class="left-bar merge-left">
+                <!-- SEARCH BAR -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- LEFT NAV -->
+                <div class="left-nav">
+                    <ul class="side-navigation accordion" id="nav-accordion">
+                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="#"><i class="icon-list-alt"></i>Forms</a>
+                            <ul>
+                                <li><a href="form-elements.html"><i class="icon-double-angle-right"></i>All Form Elements</a></li>
+                                <li><a href="extended-form-elements.html"><i class="icon-double-angle-right"></i> Extended Form Elements <span class="nav-instruction"> Lots of plugins is used here</span></a></li>
+                                <li><a href="form-validation.html"><i class="icon-double-angle-right"></i>Form Validation</a></li>
+                                <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i>Stepy Form</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-table-2"></i>Tables</a>
+                            <ul>
+                                <li><a href="basic-table.html"><i class="icon-double-angle-right"></i> Basic Tables <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="table-themes.html"><i class="icon-double-angle-right"></i> Tables-Theme</a></li>
+                                <li><a href="data-tables.html"><i class="icon-double-angle-right"></i> Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-columns"></i> Grid/Portlets</a>
+                            <ul>
+                                <li><a href="boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Boxy Grid/Portlets <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="non-boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Non Boxy Grid/Portlets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-laptop"></i> Layout &AMP; Dashboard</a>
+                            <ul>
+                                <li><a href="blank-layout.html"><i class="icon-double-angle-right"></i> Blank Layout <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="fixed-topbar.html"><i class="icon-double-angle-right"></i> Fixed Topbar</a></li>
+                                <li><a href="fixed-leftbar.html"><i class="icon-double-angle-right"></i> Fixed Leftbar</a></li>
+                                <li><a href="top-dropdown-menu.html"><i class="icon-double-angle-right"></i> Top Dropdown Menu</a></li>
+                                <li><a href="no-sidebar.html"><i class="icon-double-angle-right"></i> No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-font"></i> Typography</a>
+                            <ul>
+                                <li><a href="typography-boxy.html"><i class="icon-double-angle-right"></i> Boxy Typography <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="typography-non-boxy.html"><i class="icon-double-angle-right"></i> Non Boxy Typography</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-cord"></i> UI Elements</a>
+                            <ul>
+                                <li><a href="bootstrap-ui.html"><i class="icon-double-angle-right"></i> Bootstrap UI <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="jquery-ui.html"><i class="icon-double-angle-right"></i> jQuery UI</a></li>
+                                <li><a href="extended-ui-elements.html"><i class="icon-double-angle-right"></i> Extended Elements<span class="nav-instruction"> More Cool UI elements plugins </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-tools"></i> Components &AMP; Plugins</a>
+                            <ul>
+                                <li><a href="buttons-icons.html"><i class="icon-double-angle-right"></i> Buttons &AMP; Icons</a></li>
+                                <li><a href="wysiwyg.html"><i class="icon-double-angle-right"></i> WYSIWYG Text Editor</a></li>
+                                <li><a href="calendar.html"><i class="icon-double-angle-right"></i> Calendar</a></li>
+                                <li><a href="flot-chart.html"><i class="icon-double-angle-right"></i> Flot Chart</a></li>
+                                <li><a href="google-chart.html"><i class="icon-double-angle-right"></i> Google Chart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-files"></i> Example Pages</a>
+                            <ul>
+                                <li><a href="content-post.html"><i class="icon-double-angle-right"></i> Content Post</a></li>
+                                <li><a href="login.html"><i class="icon-double-angle-right"></i> Login</a></li>
+                                <li><a href="product-list.html"><i class="icon-double-angle-right"></i> Products List</a></li>
+                                <li><a href="gallery.html"><i class="icon-double-angle-right"></i> Gallery Page</a></li>
+                                <li><a href="search-page.html"><i class="icon-double-angle-right"></i> Search Page</a></li>
+                                <li><a href="error-page.html"><i class="icon-double-angle-right"></i> Error Page</a></li>
+                                <li><a href="invoice-page.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SITE CONTAINER -->
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- SHORTCUT BAR -->
+                            <div class="shortcut-bar">
+                                <ul class="shortcut-items">
+                                    <li><a href="#"><span class="count-noty">12</span><i class="icon-screen-3"></i><span class="shortcut-label">Dashboard</span></a></li>
+                                    <li><a href="#"><i class="icon-cogs"></i><span class="shortcut-label">Settings</span></a></li>
+                                    <li><a href="#"><i class="icon-chart"></i><span class="shortcut-label">Statistics</span></a></li>
+                                    <li><a href="#"><i class="icon-users-2"></i><span class="shortcut-label">Users</span></a></li>
+                                    <li><a href="#"><i class="icon-file-8"></i><span class="shortcut-label">Content</span></a></li>
+                                    <li><a href="#"><i class="icon-briefcase"></i><span class="shortcut-label">Media</span></a></li>
+                                    <li><a href="#"><i class="icon-stack-list"></i><span class="shortcut-label">Task List</span></a></li>
+                                    <li><a href="#"><i class="icon-folder"></i><span class="shortcut-label">Files</span></a></li>
+                                    <li><a href="#"><i class="icon-coin"></i><span class="shortcut-label">Income</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="page-header">
+                                <h1><i class="icon-font-size"></i> Typography <small>Typography in box widget </small></h1>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                <li><a href="#">Library</a></li>
+                                <li class="active">Boxy typography</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-font-2"></i></span>
+                                    <h4 class="pull-left">Heading</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <h1>h1. Heading 1</h1>
+                                            <h2>h2. Heading 2</h2>
+                                            <h3>h3. Heading 3</h3>
+                                            <h4>h4. Heading 4</h4>
+                                            <h5>h5. Heading 5</h5>
+                                            <h6>h6. Heading 6</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-paragraph-justify-2"></i></span>
+                                    <h4>Parapgraph</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <p>
+                                                Aenean nibh odio, feugiat eget ullamcorper sit amet, rhoncus vitae sem. In tellus mi, ultrices sed iaculis at, ultricies ac purus. Morbi varius porttitor aliquet. Morbi dui lectus, fermentum sed volutpat sed, iaculis quis odio. Quisque ac bibendum purus. Nulla venenatis libero nec orci porttitor condimentum. Praesent facilisis fringilla dui sed ornare iaculis quis odio. Quisque ac bibendum purus.
+                                            </p>
+                                            <p class="lead">
+                                                Sed pulvinar, tortor a vehicula lacinia, massa tortor mattis ante, ac tincidunt lorem arcu non turpis. Fusce pharetra tincidunt sem, ac fermentum ipsum porta eget. Duis tincidunt nunc a lectus tincidunt posuere. Ut lacus justo...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-paragraph-justify-2"></i></span>
+                                    <h4>Emphasis</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <p class="muted">
+                                                Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+                                            </p>
+                                            <p class="text-warning">
+                                                Etiam porta sem malesuada magna mollis euismod.
+                                            </p>
+                                            <p class="text-error">
+                                                Donec ullamcorper nulla non metus auctor fringilla.
+                                            </p>
+                                            <p class="text-info">
+                                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+                                            </p>
+                                            <p class="text-success">
+                                                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-office "></i></span>
+                                    <h4>Addresses</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <address>
+                                                <strong>Twitter, Inc.</strong><br>
+                                                795 Folsom Ave, Suite 600<br>
+                                                San Francisco, CA 94107<br>
+                                                <abbr title="Phone">P:</abbr> (123) 456-7890 </address>
+                                            <address>
+                                                <strong>Full Name</strong><br>
+                                                <a href="mailto:#">first.last@gmail.com</a>
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class=" icon-quotes-right "></i></span>
+                                    <h4>Blockquotes</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block clearfix">
+                                        <div class="widget-content box-padding">
+                                            <div class="widget-content box-padding">
+                                                <p>
+                                                    Default blockquotes are styled as such:
+                                                </p>
+                                                <blockquote>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
+                                                    </p>
+                                                    <small>Someone famous in <cite title="">Body of work</cite></small>
+                                                </blockquote>
+                                                <p>
+                                                    To float your blockquote to the right, add <code>class="pull-right"</code>:
+                                                </p>
+                                                <blockquote class="pull-right">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
+                                                    </p>
+                                                    <small>Someone famous in <cite title="">Body of work</cite></small>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-block clearfix">
+                                        <div class="widget-content box-padding">
+                                            <div class="clearfix">
+                                                <blockquote>
+                                                    <p>
+                                                        Cras erat diam, consequat quis tincidunt nec, eleifend a turpis. Aliquam ultrices feugiat metus, ut imperdiet erat mollis at. Curabitur mattis risus sagittis nibh lobortis vel.
+                                                    </p>
+                                                </blockquote>
+                                                <blockquote class="quote_blue">
+                                                    <p>
+                                                        Cras erat diam, consequat quis tincidunt nec, eleifend a turpis. Aliquam ultrices feugiat metus, ut imperdiet erat mollis at. Curabitur mattis risus sagittis nibh lobortis vel.
+                                                    </p>
+                                                </blockquote>
+                                                <blockquote class="quote_orange">
+                                                    <p>
+                                                        Cras erat diam, consequat quis tincidunt nec, eleifend a turpis. Aliquam ultrices feugiat metus, ut imperdiet erat mollis at. Curabitur mattis risus sagittis nibh lobortis vel.
+                                                    </p>
+                                                </blockquote>
+                                                <blockquote class="quote_pink">
+                                                    <p class=" quote">
+                                                        Cras erat diam, consequat quis tincidunt nec, eleifend a turpis. Aliquam ultrices feugiat metus, ut imperdiet erat mollis at. Curabitur mattis risus sagittis nibh lobortis vel.
+                                                    </p>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-list"></i></span>
+                                    <h4>List</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <h4>Unorder List</h4>
+                                            <ul class="tick_icn">
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            </ul>
+                                            <ul class="alarm_icn">
+                                                <li>Quisque laoreet risus eget lorem vehicula in egestas purus fermentum.</li>
+                                            </ul>
+                                            <ul class="award_icn">
+                                                <li>Aliquam a ligula eget velit semper porta at in risus.</li>
+                                            </ul>
+                                            <ul class="help_icn">
+                                                <li>Cras non enim sed mauris malesuada tincidunt eget nec enim.</li>
+                                            </ul>
+                                            <ul class="clip_icn">
+                                                <li>Suspendisse blandit imperdiet arcu, et ullamcorper lectus lacinia eu.</li>
+                                            </ul>
+                                            <ul class="flag_icn">
+                                                <li>Nullam non erat tellus, eget dapibus velit.</li>
+                                            </ul>
+                                            <ul class="folder_icn">
+                                                <li>Maecenas id purus lectus, eget fermentum ipsum.</li>
+                                            </ul>
+                                            <ul class="globe_icn">
+                                                <li>Nam tristique arcu vitae massa scelerisque id euismod ligula ullamcorper.</li>
+                                            </ul>
+                                            <ul class="heart_icn">
+                                                <li>Aenean a tortor nisl, ac feugiat quam.</li>
+                                            </ul>
+                                            <ul class="info_icn">
+                                                <li>Sed congue lacus vel risus mollis nec eleifend sapien consequat.</li>
+                                            </ul>
+                                            <ul class="medal_icn">
+                                                <li>Vivamus porttitor sapien eleifend mauris condimentum non semper leo vestibulum.</li>
+                                            </ul>
+                                            <ul class="pin_icn">
+                                                <li>Donec ac tortor quis nibh rhoncus ultricies.</li>
+                                            </ul>
+                                            <ul class="plus_icn">
+                                                <li>Vestibulum sollicitudin velit quis libero adipiscing ut aliquet eros dictum.</li>
+                                            </ul>
+                                            <ul class="trophy_icn">
+                                                <li>Suspendisse blandit imperdiet arcu, et ullamcorper lectus lacinia eu.</li>
+                                            </ul>
+                                            <h4>Order List</h4>
+                                            <ol class="decimal_order">
+                                                <li>Aenean a tortor nisl, ac feugiat quam.</li>
+                                                <li>Etiam laoreet lectus sit amet leo ullamcorper sit amet semper sem tempus.</li>
+                                            </ol>
+                                            <ol class="upper_roman">
+                                                <li>Pellentesque tempus varius odio, sit amet bibendum lacus interdum sit amet.</li>
+                                                <li>Curabitur semper elit sit amet eros consequat volutpat.</li>
+                                            </ol>
+                                            <ol class="lower_roman">
+                                                <li>Sed sit amet lacus mauris, et facilisis augue.</li>
+                                                <li>Donec volutpat augue non ligula facilisis elementum.</li>
+                                            </ol>
+                                            <ol class="lower_alpha">
+                                                <li>Integer sed erat non libero porttitor venenatis.</li>
+                                                <li>Nunc nec mi non mauris elementum tincidunt eget quis felis.</li>
+                                            </ol>
+                                            <ol class="upper_alpha">
+                                                <li>Sed blandit elit ac tortor convallis cursus.</li>
+                                                <li>Duis pretium sem a nunc scelerisque tincidunt ut euismod sapien.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-align-justify"></i></span>
+                                    <h4>Horizontal description</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <p>
+                                                <code>&lt;dl class="dl-horizontal"&gt;</code>
+                                            </p>
+                                            <dl class="dl-horizontal">
+                                                <dt>Description lists</dt>
+                                                <dd>A description list is perfect for defining terms.</dd>
+                                                <dt>Euismod</dt>
+                                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                                <dt>Malesuada porta</dt>
+                                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                                <dt>Felis euismod semper eget lacinia</dt>
+                                                <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-code "></i></span>
+                                    <h4>Code</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <pre class="prettyprint linenums">
+										 &lt;div class="dropdown"&gt; &lt;!-- Link or button to toggle dropdown --&gt; &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt; &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prettify.js"></script>
+        <!--jQuery touch scroll -->
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src='js/jquery.cookie.js'></script>
+        <script src='js/jquery.hoverIntent.minified.js'></script>
+        <!--jQuery leftbar navigation accordion -->
+        <script src='js/jquery.dcjqaccordion.2.7.js'></script>
+        <!-- Theme common script -->
+        
+        <script src='js/common-script.js'></script>
+        <!--[if lte IE 7]>
+                        <script src="js/font-alpona-ie7.js"></script>
+                        <![endif]-->
+    </body>
+</html>

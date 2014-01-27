@@ -1,0 +1,6 @@
+Icon Set:	IcoMoon - Ultimate -- http://icomoon.io/#icons
+License:	Royalty Free -- http://icomoon.io/#icons#license
+
+
+Icon Set:	Font Awesome -- http://fortawesome.github.com/Font-Awesome/
+License:	CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/

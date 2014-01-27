@@ -1,0 +1,613 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpona - A Clean Responsive Flat B3 Admin Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin Panel Template">
+        <!-- styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-alpona.css" rel="stylesheet">
+        <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/jquery.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="scroll-top">
+                <a href="#" class="tip-top" title="Go Top"><i class="icon-arrow-up"></i></a>
+            </div>
+            <!-- TOP BAR -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#" class="left-toggle"><i class="icon-menu-2 "></i></a>
+                            <!-- LOGO -->
+                            <div class="branding">
+                                <a href="index.html"><img src="images/alpona-logo.png" alt="Alpona Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 responsive-notification-mnu">
+                            <ul class="notification-bar">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 10 new notifications</h6>
+                                        </div>
+                                        <ul class="notification-list">
+                                            <li><a href="#" class="clearfix"><i class="icon-star blue"></i><span class="notification-intro">Donec pretium enim vel nisl viverra posuere.<span class="notification-time">8 min ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bell orange"></i><span class="notification-intro">Vestibulum viverra magna vitae dui volutpat dapibus. <span class="notification-time">3 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bolt brown"></i><span class="notification-intro">Fusce eget ipsum in odio consectetur condimentum et id nisl.<span class="notification-time">5 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-ok-sign green"></i><span class="notification-intro">Mauris fringilla metus in mauris molestie tempor <span class="notification-time">8 hours ago</span></span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count-noty">12</span><i class="icon-envelop-opened"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 32 new messages</h6>
+                                        </div>
+                                        <ul class="msg-list">
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/binjal.png"></span><span><i>binjal</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sharmin.png"></span><span><i>sharmin</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/shusi.png"></span><span><i>shusi</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/jamjam.png"></span><span><i>jamjam</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sinha.png"></span><span><i>sinha</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4 clearfix responsive-log-mnu">
+                            <!-- ADMIN DRODOWN MENU -->
+                            <div class="loged-nav pull-right">
+                                <ul class="clearfix">
+                                    <li class="log-nav dropdown pull-right"><a class="dropdown-toggle clearfix" data-toggle="dropdown">
+                                            <span class="pull-left loged-user-name">Sharmin Sultana</span><span class="logged-user-thumb pull-right"><img class="img-circle" src="images/admin-avatar.jpg" alt="Admin"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul class="pull-right">
+                                                <li><a href="#">kjamanebr@gmail.com</a></li>
+                                                <li><a href="#">Edit Profile</a></li>
+                                                <li><a href="#">Inbox</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" class="logout-link"><i class="icon-lock-3"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT BAR -->
+            <div class="left-bar merge-left">
+                <!-- SEARCH BAR -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- LEFT NAV -->
+                <div class="left-nav">
+                    <ul class="side-navigation accordion" id="nav-accordion">
+                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="#"><i class="icon-list-alt"></i>Forms</a>
+                            <ul>
+                                <li><a href="form-elements.html"><i class="icon-double-angle-right"></i>All Form Elements</a></li>
+                                <li><a href="extended-form-elements.html"><i class="icon-double-angle-right"></i> Extended Form Elements <span class="nav-instruction"> Lots of plugins is used here</span></a></li>
+                                <li><a href="form-validation.html"><i class="icon-double-angle-right"></i>Form Validation</a></li>
+                                <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i>Stepy Form</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-table-2"></i>Tables</a>
+                            <ul>
+                                <li><a href="basic-table.html"><i class="icon-double-angle-right"></i> Basic Tables <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="table-themes.html"><i class="icon-double-angle-right"></i> Tables-Theme</a></li>
+                                <li><a href="data-tables.html"><i class="icon-double-angle-right"></i> Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-columns"></i> Grid/Portlets</a>
+                            <ul>
+                                <li><a href="boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Boxy Grid/Portlets <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="non-boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Non Boxy Grid/Portlets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-laptop"></i> Layout &AMP; Dashboard</a>
+                            <ul>
+                                <li><a href="blank-layout.html"><i class="icon-double-angle-right"></i> Blank Layout <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="fixed-topbar.html"><i class="icon-double-angle-right"></i> Fixed Topbar</a></li>
+                                <li><a href="fixed-leftbar.html"><i class="icon-double-angle-right"></i> Fixed Leftbar</a></li>
+                                <li><a href="top-dropdown-menu.html"><i class="icon-double-angle-right"></i> Top Dropdown Menu</a></li>
+                                <li><a href="no-sidebar.html"><i class="icon-double-angle-right"></i> No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-font"></i> Typography</a>
+                            <ul>
+                                <li><a href="typography-boxy.html"><i class="icon-double-angle-right"></i> Boxy Typography <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="typography-non-boxy.html"><i class="icon-double-angle-right"></i> Non Boxy Typography</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-cord"></i> UI Elements</a>
+                            <ul>
+                                <li><a href="bootstrap-ui.html"><i class="icon-double-angle-right"></i> Bootstrap UI <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="jquery-ui.html"><i class="icon-double-angle-right"></i> jQuery UI</a></li>
+                                <li><a href="extended-ui-elements.html"><i class="icon-double-angle-right"></i> Extended Elements<span class="nav-instruction"> More Cool UI elements plugins </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-tools"></i> Components &AMP; Plugins</a>
+                            <ul>
+                                <li><a href="buttons-icons.html"><i class="icon-double-angle-right"></i> Buttons &AMP; Icons</a></li>
+                                <li><a href="wysiwyg.html"><i class="icon-double-angle-right"></i> WYSIWYG Text Editor</a></li>
+                                <li><a href="calendar.html"><i class="icon-double-angle-right"></i> Calendar</a></li>
+                                <li><a href="flot-chart.html"><i class="icon-double-angle-right"></i> Flot Chart</a></li>
+                                <li><a href="google-chart.html"><i class="icon-double-angle-right"></i> Google Chart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-files"></i> Example Pages</a>
+                            <ul>
+                                <li><a href="content-post.html"><i class="icon-double-angle-right"></i> Content Post</a></li>
+                                <li><a href="login.html"><i class="icon-double-angle-right"></i> Login</a></li>
+                                <li><a href="product-list.html"><i class="icon-double-angle-right"></i> Products List</a></li>
+                                <li><a href="gallery.html"><i class="icon-double-angle-right"></i> Gallery Page</a></li>
+                                <li><a href="search-page.html"><i class="icon-double-angle-right"></i> Search Page</a></li>
+                                <li><a href="error-page.html"><i class="icon-double-angle-right"></i> Error Page</a></li>
+                                <li><a href="invoice-page.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SITE CONTAINER -->
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- SHORTCUT BAR -->
+                            <div class="shortcut-bar">
+                                <ul class="shortcut-items">
+                                    <li><a href="#"><span class="count-noty">12</span><i class="icon-screen-3"></i><span class="shortcut-label">Dashboard</span></a></li>
+                                    <li><a href="#"><i class="icon-cogs"></i><span class="shortcut-label">Settings</span></a></li>
+                                    <li><a href="#"><i class="icon-chart"></i><span class="shortcut-label">Statistics</span></a></li>
+                                    <li><a href="#"><i class="icon-users-2"></i><span class="shortcut-label">Users</span></a></li>
+                                    <li><a href="#"><i class="icon-file-8"></i><span class="shortcut-label">Content</span></a></li>
+                                    <li><a href="#"><i class="icon-briefcase"></i><span class="shortcut-label">Media</span></a></li>
+                                    <li><a href="#"><i class="icon-stack-list"></i><span class="shortcut-label">Task List</span></a></li>
+                                    <li><a href="#"><i class="icon-folder"></i><span class="shortcut-label">Files</span></a></li>
+                                    <li><a href="#"><i class="icon-coin"></i><span class="shortcut-label">Income</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="page-header">
+                                <h1><i class="icon-chart"></i> Google Chart</h1>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                <li><a href="#">Library</a></li>
+                                <li class="active">Chart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-pie-4 "></i></span>
+                                    <h4 class="pull-left">Pie Chart</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-stats"></i></span>
+                                    <h4 class="pull-left">Line Chart</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-bars-2"></i></span>
+                                    <h4 class="pull-left">Bar Chart</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-bars-2"></i></span>
+                                    <h4 class="pull-left">Bar Chart</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-bars-2"></i></span>
+                                    <h4 class="pull-left">Bar Chart</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-meter"></i></span>
+                                    <h4 class="pull-left">Meter</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-location-2"></i></span>
+                                    <h4 class="pull-left">Geo Map</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div_geo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-location-2"></i></span>
+                                    <h4 class="pull-left">Geo Map</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div_geo1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-stats-up"></i></span>
+                                    <h4 class="pull-left">Line Chart</h4>
+                                </div>
+                                <div class="widget-container white border">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <!--box-spacing define 20px padding for all content here-->
+                                            <div id="chart_div_line">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prettify.js"></script>
+        <!--jQuery touch scroll -->
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src='js/jquery.cookie.js'></script>
+        <script src='js/jquery.hoverIntent.minified.js'></script>
+        <!--jQuery leftbar navigation accordion -->
+        <script src='js/jquery.dcjqaccordion.2.7.js'></script>
+        <!-- Google JsApi -->
+        <script src="https://www.google.com/jsapi"></script>
+        <!-- Theme common script -->
+        
+        <script src='js/common-script.js'></script>
+        <!--[if lte IE 7]>
+                        <script src="js/font-alpona-ie7.js"></script>
+                        <![endif]-->
+        <script>
+            google.load("visualization", "1", {
+                packages: ["corechart"]
+            });
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Work', 11],
+                    ['Eat', 2],
+                    ['Commute', 2],
+                    ['Watch TV', 2],
+                    ['Sleep', 7]
+                ]);
+                var options = {
+                    title: 'My Daily Activities',
+                    slices: [{color: '#b51c44'}, {color: '#ce4b27'}, {color: '#009600'}, {color: '#e88a05'}, {color: '#3498db'}]
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>
+            google.load("visualization", "1", {
+                packages: ["corechart"]
+            });
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Work', 11],
+                    ['Eat', 2],
+                    ['Commute', 2],
+                    ['Watch TV', 2],
+                    ['Sleep', 7]
+                ]);
+                var options = {
+                    title: 'My Daily Activities',
+                    slices: [{color: '#b51c44'}, {color: '#ce4b27'}, {color: '#009600'}, {color: '#e88a05'}, {color: '#3498db'}]
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Year', 'Sales', 'Expenses'],
+                    ['2004', 1000, 400],
+                    ['2005', 1170, 460],
+                    ['2006', 5000, 1120],
+                    ['2007', 1030, 540]
+                ]);
+                var options = {
+                    title: 'Company Performance',
+                    series: [{color: '#3498db', pointSize: '5', curveType: 'function'}, {color: '#009600', pointSize: '5', curveType: 'function'}]
+                };
+                var chart = new google.visualization.AreaChart(document.getElementById('chart_div1'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Year', 'Sales', 'Expenses'],
+                    ['2004', 1000, 400],
+                    ['2005', 1170, 460],
+                    ['2006', 660, 1120],
+                    ['2007', 1030, 540]
+                ]);
+                var options = {
+                    title: 'Company Performance',
+                    vAxis: {title: 'Year', titleTextStyle: {color: 'red'}},
+                    series: [{color: '#3498db'}, {color: '#e88a05'}]
+                };
+                var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Year', 'Sales', 'Expenses'],
+                    ['2004', 1000, 400],
+                    ['2005', 1170, 460],
+                    ['2006', 660, 1120],
+                    ['2007', 1030, 540]
+                ]);
+                var options = {
+                    title: 'Company Performance',
+                    hAxis: {title: 'Year', titleTextStyle: {color: 'red'}},
+                    series: [{color: '#5b3ab6'}, {color: '#a300aa'}]
+                };
+                var chart = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>
+            google.load('visualization', '1', {packages: ['corechart']});
+        </script>
+        <script>
+            function drawVisualization() {
+                // Some raw data (not necessarily accurate)
+                var data = google.visualization.arrayToDataTable([
+                    ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+                    ['2004/05', 165, 938, 522, 998, 450, 614.6],
+                    ['2005/06', 135, 1120, 599, 1268, 288, 682],
+                    ['2006/07', 157, 1167, 587, 807, 397, 623],
+                    ['2007/08', 139, 1110, 615, 968, 215, 609.4],
+                    ['2008/09', 136, 691, 629, 1026, 366, 569.6]
+                ]);
+                var options = {
+                    title: 'Monthly Coffee Production by Country',
+                    vAxis: {title: "Cups"},
+                    hAxis: {title: "Month"},
+                    seriesType: "bars",
+                    series: [{color: '#ce4b27'}, {color: '#b51c44', type: "line", curveType: 'function'}, {color: '#5b3ab6'}, {color: '#a300aa'}, {color: '#009600'}, {color: '#0093a8'}]
+                };
+                var chart = new google.visualization.ComboChart(document.getElementById('chart_div4'));
+                chart.draw(data, options);
+            }
+            google.setOnLoadCallback(drawVisualization);
+        </script>
+        <script>
+            google.load('visualization', '1', {packages: ['gauge']});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Label', 'Value'],
+                    ['Memory', 80],
+                    ['CPU', 55],
+                    ['Network', 68]
+                ]);
+                var options = {
+                    width: 400, height: 120,
+                    redFrom: 90, redTo: 100,
+                    greenFrom: 75, greenTo: 90,
+                    minorTicks: 5
+                };
+                var chart = new google.visualization.Gauge(document.getElementById('chart_div5'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>
+            google.load('visualization', '1', {'packages': ['geochart']});
+            google.setOnLoadCallback(drawRegionsMap);
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Country', 'Popularity'],
+                    ['Germany', 200],
+                    ['United States', 300],
+                    ['Brazil', 400],
+                    ['Canada', 500],
+                    ['France', 600],
+                    ['RU', 700]
+                ]);
+                var options = {
+                    colorAxis: {colors: ['#009600', '#e88a05', '#3498db']}
+                };
+                var chart = new google.visualization.GeoChart(document.getElementById('chart_div_geo'));
+                chart.draw(data, options);
+            }
+            ;
+        </script>
+        <script>
+            google.load('visualization', '1', {'packages': ['geochart']});
+            google.setOnLoadCallback(drawMarkersMap);
+            function drawMarkersMap() {
+                var data = google.visualization.arrayToDataTable([
+                    ['City', 'Population', 'Area'],
+                    ['Rome', 2761477, 1285.31],
+                    ['Milan', 1324110, 181.76],
+                    ['Naples', 959574, 117.27],
+                    ['Turin', 907563, 130.17],
+                    ['Palermo', 655875, 158.9],
+                    ['Genoa', 607906, 243.60],
+                    ['Bologna', 380181, 140.7],
+                    ['Florence', 371282, 102.41],
+                    ['Fiumicino', 67370, 213.44],
+                    ['Anzio', 52192, 43.43],
+                    ['Ciampino', 38262, 11]
+                ]);
+                var options = {
+                    region: 'IT',
+                    displayMode: 'markers',
+                    colorAxis: {colors: ['#009600', '#e88a05']}
+                };
+                var chart = new google.visualization.GeoChart(document.getElementById('chart_div_geo1'));
+                chart.draw(data, options);
+            }
+            ;
+        </script>
+        <script>
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Year', 'Sales', 'Expenses'],
+                    ['2004', 1000, 400],
+                    ['2005', 5000, 2000],
+                    ['2006', 660, 1120],
+                    ['2007', 1030, 10000]
+                ]);
+                var options = {
+                    title: 'Company Performance',
+                    series: [{color: '#3498db', pointSize: '5', curveType: 'function'}, {color: '#009600', pointSize: '5', curveType: 'function'}]
+                };
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div_line'));
+                chart.draw(data, options);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpona - A Clean Responsive Flat B3 Admin Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin Panel Template">
+        <!-- styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-alpona.css" rel="stylesheet">
+        <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/jquery.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .ui-menu { width: 150px; 
+                       position: relative;
+            }
+            .progress-label {
+                position: absolute;
+                left: 50%;
+                top: 4px;
+                font-weight: bold;
+                text-shadow: 1px 1px 0 #fff;
+            }
+            #eq span {
+                height:120px; float:left; margin:15px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="scroll-top">
+                <a href="#" class="tip-top" title="Go Top"><i class="icon-arrow-up"></i></a>
+            </div>
+            <!-- TOP BAR -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#" class="left-toggle"><i class="icon-menu-2 "></i></a>
+                            <!-- LOGO -->
+                            <div class="branding">
+                                <a href="index.html"><img src="images/alpona-logo.png" alt="Alpona Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 responsive-notification-mnu">
+                            <ul class="notification-bar">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 10 new notifications</h6>
+                                        </div>
+                                        <ul class="notification-list">
+                                            <li><a href="#" class="clearfix"><i class="icon-star blue"></i><span class="notification-intro">Donec pretium enim vel nisl viverra posuere.<span class="notification-time">8 min ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bell orange"></i><span class="notification-intro">Vestibulum viverra magna vitae dui volutpat dapibus. <span class="notification-time">3 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bolt brown"></i><span class="notification-intro">Fusce eget ipsum in odio consectetur condimentum et id nisl.<span class="notification-time">5 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-ok-sign green"></i><span class="notification-intro">Mauris fringilla metus in mauris molestie tempor <span class="notification-time">8 hours ago</span></span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count-noty">12</span><i class="icon-envelop-opened"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 32 new messages</h6>
+                                        </div>
+                                        <ul class="msg-list">
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/binjal.png"></span><span><i>binjal</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sharmin.png"></span><span><i>sharmin</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/shusi.png"></span><span><i>shusi</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/jamjam.png"></span><span><i>jamjam</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sinha.png"></span><span><i>sinha</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4 clearfix responsive-log-mnu">
+                            <!-- ADMIN DRODOWN MENU -->
+                            <div class="loged-nav pull-right">
+                                <ul class="clearfix">
+                                    <li class="log-nav dropdown pull-right"><a class="dropdown-toggle clearfix" data-toggle="dropdown">
+                                            <span class="pull-left loged-user-name">Sharmin Sultana</span><span class="logged-user-thumb pull-right"><img class="img-circle" src="images/admin-avatar.jpg" alt="Admin"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul class="pull-right">
+                                                <li><a href="#">kjamanebr@gmail.com</a></li>
+                                                <li><a href="#">Edit Profile</a></li>
+                                                <li><a href="#">Inbox</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" class="logout-link"><i class="icon-lock-3"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT BAR -->
+            <div class="left-bar merge-left">
+                <!-- SEARCH BAR -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- LEFT NAV -->
+                <div class="left-nav">
+                    <ul class="side-navigation accordion" id="nav-accordion">
+                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="#"><i class="icon-list-alt"></i>Forms</a>
+                            <ul>
+                                <li><a href="form-elements.html"><i class="icon-double-angle-right"></i>All Form Elements</a></li>
+                                <li><a href="extended-form-elements.html"><i class="icon-double-angle-right"></i> Extended Form Elements <span class="nav-instruction"> Lots of plugins is used here</span></a></li>
+                                <li><a href="form-validation.html"><i class="icon-double-angle-right"></i>Form Validation</a></li>
+                                <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i>Stepy Form</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-table-2"></i>Tables</a>
+                            <ul>
+                                <li><a href="basic-table.html"><i class="icon-double-angle-right"></i> Basic Tables <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="table-themes.html"><i class="icon-double-angle-right"></i> Tables-Theme</a></li>
+                                <li><a href="data-tables.html"><i class="icon-double-angle-right"></i> Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-columns"></i> Grid/Portlets</a>
+                            <ul>
+                                <li><a href="boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Boxy Grid/Portlets <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="non-boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Non Boxy Grid/Portlets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-laptop"></i> Layout &AMP; Dashboard</a>
+                            <ul>
+                                <li><a href="blank-layout.html"><i class="icon-double-angle-right"></i> Blank Layout <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="fixed-topbar.html"><i class="icon-double-angle-right"></i> Fixed Topbar</a></li>
+                                <li><a href="fixed-leftbar.html"><i class="icon-double-angle-right"></i> Fixed Leftbar</a></li>
+                                <li><a href="top-dropdown-menu.html"><i class="icon-double-angle-right"></i> Top Dropdown Menu</a></li>
+                                <li><a href="no-sidebar.html"><i class="icon-double-angle-right"></i> No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-font"></i> Typography</a>
+                            <ul>
+                                <li><a href="typography-boxy.html"><i class="icon-double-angle-right"></i> Boxy Typography <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="typography-non-boxy.html"><i class="icon-double-angle-right"></i> Non Boxy Typography</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-cord"></i> UI Elements</a>
+                            <ul>
+                                <li><a href="bootstrap-ui.html"><i class="icon-double-angle-right"></i> Bootstrap UI <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="jquery-ui.html"><i class="icon-double-angle-right"></i> jQuery UI</a></li>
+                                <li><a href="extended-ui-elements.html"><i class="icon-double-angle-right"></i> Extended Elements<span class="nav-instruction"> More Cool UI elements plugins </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-tools"></i> Components &AMP; Plugins</a>
+                            <ul>
+                                <li><a href="buttons-icons.html"><i class="icon-double-angle-right"></i> Buttons &AMP; Icons</a></li>
+                                <li><a href="wysiwyg.html"><i class="icon-double-angle-right"></i> WYSIWYG Text Editor</a></li>
+                                <li><a href="calendar.html"><i class="icon-double-angle-right"></i> Calendar</a></li>
+                                <li><a href="flot-chart.html"><i class="icon-double-angle-right"></i> Flot Chart</a></li>
+                                <li><a href="google-chart.html"><i class="icon-double-angle-right"></i> Google Chart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-files"></i> Example Pages</a>
+                            <ul>
+                                <li><a href="content-post.html"><i class="icon-double-angle-right"></i> Content Post</a></li>
+                                <li><a href="login.html"><i class="icon-double-angle-right"></i> Login</a></li>
+                                <li><a href="product-list.html"><i class="icon-double-angle-right"></i> Products List</a></li>
+                                <li><a href="gallery.html"><i class="icon-double-angle-right"></i> Gallery Page</a></li>
+                                <li><a href="search-page.html"><i class="icon-double-angle-right"></i> Search Page</a></li>
+                                <li><a href="error-page.html"><i class="icon-double-angle-right"></i> Error Page</a></li>
+                                <li><a href="invoice-page.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SITE CONTAINER -->
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- SHORTCUT BAR -->
+                            <div class="shortcut-bar">
+                                <ul class="shortcut-items">
+                                    <li><a href="#"><span class="count-noty">12</span><i class="icon-screen-3"></i><span class="shortcut-label">Dashboard</span></a></li>
+                                    <li><a href="#"><i class="icon-cogs"></i><span class="shortcut-label">Settings</span></a></li>
+                                    <li><a href="#"><i class="icon-chart"></i><span class="shortcut-label">Statistics</span></a></li>
+                                    <li><a href="#"><i class="icon-users-2"></i><span class="shortcut-label">Users</span></a></li>
+                                    <li><a href="#"><i class="icon-file-8"></i><span class="shortcut-label">Content</span></a></li>
+                                    <li><a href="#"><i class="icon-briefcase"></i><span class="shortcut-label">Media</span></a></li>
+                                    <li><a href="#"><i class="icon-stack-list"></i><span class="shortcut-label">Task List</span></a></li>
+                                    <li><a href="#"><i class="icon-folder"></i><span class="shortcut-label">Files</span></a></li>
+                                    <li><a href="#"><i class="icon-coin"></i><span class="shortcut-label">Income</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="page-header">
+                                <h1><i class="icon-cord"></i> Jquery UI Elements </h1>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="icon-home"></i></a></li>
+                                <li><a href="#">Library</a></li>
+                                <li class="active">Jquery UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Accordion</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div id="accordion">
+                                        <h3>Section 1</h3>
+                                        <div>
+                                            <p>
+                                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                                            </p>
+                                        </div>
+                                        <h3>Section 2</h3>
+                                        <div>
+                                            <p>
+                                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                                            </p>
+                                        </div>
+                                        <h3>Section 3</h3>
+                                        <div>
+                                            <p>
+                                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                            </p>
+                                            <ul>
+                                                <li>List item one</li>
+                                                <li>List item two</li>
+                                                <li>List item three</li>
+                                            </ul>
+                                        </div>
+                                        <h3>Section 4</h3>
+                                        <div>
+                                            <p>
+                                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                                            </p>
+                                            <p>
+                                                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Animated Progress Bar</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div id="progressbar2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Animated Progress Bar</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div id="progressbar">
+                                        <span class="progress-label">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Slider</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <ul class="elem-style">
+                                        <li>
+                                            <div id="slider">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div id="master">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="eq">
+                                        <span>88</span>
+                                        <span>77</span>
+                                        <span>55</span>
+                                        <span>33</span>
+                                        <span>40</span>
+                                        <span>45</span>
+                                        <span>70</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Multilevel Dropdown</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <ul id="menu">
+                                        <li class="ui-state-disabled"><a href="#">Aberdeen</a></li>
+                                        <li><a href="#">Ada</a></li>
+                                        <li><a href="#">Adamsville</a></li>
+                                        <li><a href="#">Addyston</a></li>
+                                        <li>
+                                            <a href="#">Delphi</a>
+                                            <ul>
+                                                <li class="ui-state-disabled"><a href="#">Ada</a></li>
+                                                <li><a href="#">Saarland</a></li>
+                                                <li><a href="#">Salzburg</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Saarland</a></li>
+                                        <li>
+                                            <a href="#">Salzburg</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Delphi</a>
+                                                    <ul>
+                                                        <li><a href="#">Ada</a></li>
+                                                        <li><a href="#">Saarland</a></li>
+                                                        <li><a href="#">Salzburg</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Delphi</a>
+                                                    <ul>
+                                                        <li><a href="#">Ada</a></li>
+                                                        <li><a href="#">Saarland</a></li>
+                                                        <li><a href="#">Salzburg</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Perch</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="ui-state-disabled"><a href="#">Amesville</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Spinner</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <input id="spinner" name="spinner" value="5.06"/>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Tabs</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <div id="tabs">
+                                        <ul>
+                                            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                                            <li><a href="#tabs-2">Proin dolor</a></li>
+                                            <li><a href="#tabs-3">Aenean lacinia</a></li>
+                                        </ul>
+                                        <div id="tabs-1">
+                                            <p>
+                                                Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                                            </p>
+                                        </div>
+                                        <div id="tabs-2">
+                                            <p>
+                                                Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+                                            </p>
+                                        </div>
+                                        <div id="tabs-3">
+                                            <p>
+                                                Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+                                            </p>
+                                            <p>
+                                                Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Datepicker</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <p>
+                                        Date: <input type="text" class="form-control" id="datepicker"/>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="square-widget">
+                                <div class="widget-head clearfix">
+                                    <h4 class="pull-left">Range Datepicker</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <label for="from">From</label>
+                                    <input type="text" id="from" name="from" class="form-control"/>
+                                    <label for="to">to</label>
+                                    <input type="text" id="to" name="to" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prettify.js"></script>
+        <!--jQuery touch scroll -->
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src='js/jquery.cookie.js'></script>
+        <script src='js/jquery.hoverIntent.minified.js'></script>
+        <!--jQuery leftbar navigation accordion -->
+        <script src='js/jquery.dcjqaccordion.2.7.js'></script>
+        <!-- Theme common script -->
+        
+        <script src='js/common-script.js'></script>
+        <!--[if lte IE 7]>
+                        <script src="js/font-alpona-ie7.js"></script>
+                        <![endif]-->
+        <script>
+            $(function() {
+                /*===jQuery UI Accordion===*/
+                $("#accordion").accordion();
+                /*===jQuery UI  MENU===*/
+                $("#menu").menu();
+            });
+            /*===jQuery Progressbar===*/
+            $(function() {
+                var progressbar = $("#progressbar"),
+                        progressLabel = $(".progress-label");
+                progressbar.progressbar({
+                    value: false,
+                    change: function() {
+                        progressLabel.text(progressbar.progressbar("value") + "%");
+                    },
+                    complete: function() {
+                        progressLabel.text("Complete!");
+                    }
+                });
+                function progress() {
+                    var val = progressbar.progressbar("value") || 0;
+                    progressbar.progressbar("value", val + 1);
+                    if (val < 99) {
+                        setTimeout(progress, 100);
+                    }
+                }
+                setTimeout(progress, 3000);
+            });
+            $(function() {
+                $("#progressbar2").progressbar({
+                    value: 37
+                });
+            });
+            /*===jQuery Slider===*/
+            $(function() {
+                $("#slider").slider();
+            });
+            $(function() {
+                // setup master volume
+                $("#master").slider({
+                    value: 60,
+                    orientation: "horizontal",
+                    range: "min",
+                    animate: true
+                });
+                // setup graphic EQ
+                $("#eq > span").each(function() {
+                    // read initial values from markup and remove that
+                    var value = parseInt($(this).text(), 10);
+                    $(this).empty().slider({
+                        value: value,
+                        range: "min",
+                        animate: true,
+                        orientation: "vertical"
+                    });
+                });
+            });
+            /*===jQuery UI Spiner===*/
+            $(function() {
+                $("#spinner").spinner({
+                    step: 0.01,
+                    numberFormat: "n"
+                });
+            });
+            /*===jQuery Tab===*/
+            $(function() {
+                $("#tabs").tabs();
+            });
+            /*===jQuery Datepicker===*/
+            $(function() {
+                $("#datepicker").datepicker();
+            });
+            $(function() {
+                $("#from").datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    numberOfMonths: 3,
+                    onClose: function(selectedDate) {
+                        $("#to").datepicker("option", "minDate", selectedDate);
+                    }
+                });
+                $("#to").datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    numberOfMonths: 3,
+                    onClose: function(selectedDate) {
+                        $("#from").datepicker("option", "maxDate", selectedDate);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

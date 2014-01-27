@@ -1,0 +1,1016 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alpona - A Clean Responsive Flat B3 Admin Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Admin Panel Template">
+        <!-- styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/icheck-skins/all.css" rel="stylesheet">
+        <link href="css/jquery-select.css" rel="stylesheet">
+        <link href="css/jquery-ui/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <link href="css/font-alpona.css" rel="stylesheet">
+        <link href="css/prettify.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/bootstrap-reset.css" rel="stylesheet">
+        <!--fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/jquery.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="scroll-top">
+                <a href="#" class="tip-top" title="Go Top"><i class="icon-arrow-up"></i></a>
+            </div>
+            <!-- TOP BAR -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#" class="left-toggle"><i class="icon-menu-2 "></i></a>
+                            <!-- LOGO -->
+                            <div class="branding">
+                                <a href="index.html"><img src="images/alpona-logo.png" alt="Alpona Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 responsive-notification-mnu">
+                            <ul class="notification-bar">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 10 new notifications</h6>
+                                        </div>
+                                        <ul class="notification-list">
+                                            <li><a href="#" class="clearfix"><i class="icon-star blue"></i><span class="notification-intro">Donec pretium enim vel nisl viverra posuere.<span class="notification-time">8 min ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bell orange"></i><span class="notification-intro">Vestibulum viverra magna vitae dui volutpat dapibus. <span class="notification-time">3 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-bolt brown"></i><span class="notification-intro">Fusce eget ipsum in odio consectetur condimentum et id nisl.<span class="notification-time">5 hours ago</span></span></a></li>
+                                            <li><a href="#" class="clearfix"><i class=" icon-ok-sign green"></i><span class="notification-intro">Mauris fringilla metus in mauris molestie tempor <span class="notification-time">8 hours ago</span></span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count-noty">12</span><i class="icon-envelop-opened"></i></a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-head">
+                                            <h6>You have 32 new messages</h6>
+                                        </div>
+                                        <ul class="msg-list">
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/binjal.png"></span><span><i>binjal</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sharmin.png"></span><span><i>sharmin</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/shusi.png"></span><span><i>shusi</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/jamjam.png"></span><span><i>jamjam</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                            <li class="clearfix"><a href="#"><span class="dropdown-thumb"><img width="40" height="40" alt="Avatar" src="images/avatar-40x40/sinha.png"></span><span><i>sinha</i> is posted an article. lacus est congue... </span><span class="notification-meta"> 12 hours ago </span></a></li>
+                                        </ul>
+                                        <div class="action-btn">
+                                            <button class="btn btn-block">View All</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4 clearfix responsive-log-mnu">
+                            <!-- ADMIN DRODOWN MENU -->
+                            <div class="loged-nav pull-right">
+                                <ul class="clearfix">
+                                    <li class="log-nav dropdown pull-right"><a class="dropdown-toggle clearfix" data-toggle="dropdown">
+                                            <span class="pull-left loged-user-name">Sharmin Sultana</span><span class="logged-user-thumb pull-right"><img class="img-circle" src="images/admin-avatar.jpg" alt="Admin"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul class="pull-right">
+                                                <li><a href="#">kjamanebr@gmail.com</a></li>
+                                                <li><a href="#">Edit Profile</a></li>
+                                                <li><a href="#">Inbox</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" class="logout-link"><i class="icon-lock-3"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT BAR -->
+            <div class="left-bar merge-left">
+                <!-- SEARCH BAR -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <!-- LEFT NAV -->
+                <div class="left-nav">
+                    <ul class="side-navigation accordion" id="nav-accordion">
+                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="#"><i class="icon-list-alt"></i>Forms</a>
+                            <ul>
+                                <li><a href="form-elements.html"><i class="icon-double-angle-right"></i>All Form Elements</a></li>
+                                <li><a href="extended-form-elements.html"><i class="icon-double-angle-right"></i> Extended Form Elements <span class="nav-instruction"> Lots of plugins is used here</span></a></li>
+                                <li><a href="form-validation.html"><i class="icon-double-angle-right"></i>Form Validation</a></li>
+                                <li><a href="form-wizard.html"><i class="icon-double-angle-right"></i>Stepy Form</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-table-2"></i>Tables</a>
+                            <ul>
+                                <li><a href="basic-table.html"><i class="icon-double-angle-right"></i> Basic Tables <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="table-themes.html"><i class="icon-double-angle-right"></i> Tables-Theme</a></li>
+                                <li><a href="data-tables.html"><i class="icon-double-angle-right"></i> Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-columns"></i> Grid/Portlets</a>
+                            <ul>
+                                <li><a href="boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Boxy Grid/Portlets <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="non-boxy-grids-porlets.html"><i class="icon-double-angle-right"></i> Non Boxy Grid/Portlets</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-laptop"></i> Layout &AMP; Dashboard</a>
+                            <ul>
+                                <li><a href="blank-layout.html"><i class="icon-double-angle-right"></i> Blank Layout <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="fixed-topbar.html"><i class="icon-double-angle-right"></i> Fixed Topbar</a></li>
+                                <li><a href="fixed-leftbar.html"><i class="icon-double-angle-right"></i> Fixed Leftbar</a></li>
+                                <li><a href="top-dropdown-menu.html"><i class="icon-double-angle-right"></i> Top Dropdown Menu</a></li>
+                                <li><a href="no-sidebar.html"><i class="icon-double-angle-right"></i> No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-font"></i> Typography</a>
+                            <ul>
+                                <li><a href="typography-boxy.html"><i class="icon-double-angle-right"></i> Boxy Typography <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="typography-non-boxy.html"><i class="icon-double-angle-right"></i> Non Boxy Typography</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-cord"></i> UI Elements</a>
+                            <ul>
+                                <li><a href="bootstrap-ui.html"><i class="icon-double-angle-right"></i> Bootstrap UI <span class="nav-instruction"> This is an instruction</span></a></li>
+                                <li><a href="jquery-ui.html"><i class="icon-double-angle-right"></i> jQuery UI</a></li>
+                                <li><a href="extended-ui-elements.html"><i class="icon-double-angle-right"></i> Extended Elements<span class="nav-instruction"> More Cool UI elements plugins </span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-tools"></i> Components &AMP; Plugins</a>
+                            <ul>
+                                <li><a href="buttons-icons.html"><i class="icon-double-angle-right"></i> Buttons &AMP; Icons</a></li>
+                                <li><a href="wysiwyg.html"><i class="icon-double-angle-right"></i> WYSIWYG Text Editor</a></li>
+                                <li><a href="calendar.html"><i class="icon-double-angle-right"></i> Calendar</a></li>
+                                <li><a href="flot-chart.html"><i class="icon-double-angle-right"></i> Flot Chart</a></li>
+                                <li><a href="google-chart.html"><i class="icon-double-angle-right"></i> Google Chart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-files"></i> Example Pages</a>
+                            <ul>
+                                <li><a href="content-post.html"><i class="icon-double-angle-right"></i> Content Post</a></li>
+                                <li><a href="login.html"><i class="icon-double-angle-right"></i> Login</a></li>
+                                <li><a href="product-list.html"><i class="icon-double-angle-right"></i> Products List</a></li>
+                                <li><a href="gallery.html"><i class="icon-double-angle-right"></i> Gallery Page</a></li>
+                                <li><a href="search-page.html"><i class="icon-double-angle-right"></i> Search Page</a></li>
+                                <li><a href="error-page.html"><i class="icon-double-angle-right"></i> Error Page</a></li>
+                                <li><a href="invoice-page.html"><i class="icon-double-angle-right"></i> Invoice</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SITE CONTAINER -->
+            <div class="main-container">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="icon-home"></i></a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Form Elements</li>
+                    </ul>
+                    <div class="page-header">
+                        <h1><i class="icon-file"></i> Extended Form Elements <small>Used lots of cool jQuery plugins</small></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 widget-module">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-tags"></i></span>
+                                    <h4 class="pull-left">Tags Input</h4>
+                                    <div class="pull-right widget-action">
+                                        <ul>
+                                            <li><a href="#" class="widget-collapse"><i class="icon-arrow-down"></i></a></li>
+                                            <li><a href="#" class="widget-remove"><i class=" icon-remove-sign"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Tags</label>
+                                                    <div class="col-lg-10">
+                                                        <input id="tags_1" type="text" class="tags" value="foo,bar,baz,roffle"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Tags: (Programming languages in yellow)</label>
+                                                    <div class="col-lg-10">
+                                                        <input id="tags_2" type="text" class="tags" value="php,ios,javascript,ruby,android,kindle"/>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 widget-module">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-signup"></i></span>
+                                    <h4 class="pull-left">Checkbox/Radio</h4>
+                                    <div class="pull-right widget-action">
+                                        <ul>
+                                            <li><a href="#" class="widget-collapse"><i class="icon-arrow-down"></i></a></li>
+                                            <li><a href="#" class="widget-remove"><i class=" icon-remove-sign"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <form class="form-horizontal clearfix">
+                                                <div class="clearfix">
+                                                    <fieldset class="default-fieldset">
+                                                        <legend>Falt Theme</legend>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" checked class="icheck-box-flat">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" class="icheck-box-flat">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" class="icheck-radio-flat" name="iCheck" checked>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" name="iCheck" class="icheck-radio-flat">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div>
+                                                        <pre class="prettyprint linenums">
+													 $('.icheck-box,.icheck-radio').iCheck({ checkboxClass: 'icheckbox_minimal-red', radioClass: 'iradio_minimal-red', increaseArea: '20%' // optional });
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <fieldset class="default-fieldset">
+                                                        <legend>Red Theme</legend>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" checked class="icheck-box">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" class="icheck-box">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" class="icheck-radio" name="iCheck1" checked>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" name="iCheck1" class="icheck-radio">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div>
+                                                        <pre class="prettyprint linenums">
+													 $('.icheck-box,.icheck-radio').iCheck({ checkboxClass: 'icheckbox_minimal-red', radioClass: 'iradio_minimal-red', increaseArea: '20%' // optional });
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <fieldset class="default-fieldset">
+                                                        <legend>Futurico Theme</legend>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" checked class="icheck-box-futurico">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" class="icheck-box-futurico">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" class="icheck-radio-futurico" name="iCheck2" checked>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" name="iCheck2" class="icheck-radio-futurico">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div>
+                                                        <pre class="prettyprint linenums">
+													 $('.icheck-box,.icheck-radio').iCheck({ checkboxClass: 'icheckbox_minimal-red', radioClass: 'iradio_minimal-red', increaseArea: '20%' // optional });
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <fieldset class="default-fieldset">
+                                                        <legend>Square Theme</legend>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" checked class="icheck-box-square">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" class="icheck-box-square">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" class="icheck-radio-square" name="iCheck3" checked>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" name="iCheck3" class="icheck-radio-square">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div>
+                                                        <pre class="prettyprint linenums">
+													 $('.icheck-box,.icheck-radio').iCheck({ checkboxClass: 'icheckbox_minimal-red', radioClass: 'iradio_minimal-red', increaseArea: '20%' // optional });
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <fieldset class="default-fieldset">
+                                                        <legend>Polaris Theme</legend>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" checked class="icheck-box-polaris">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" class="icheck-box-polaris">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" class="icheck-radio-polaris" name="iCheck4" checked>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" name="iCheck4" class="icheck-radio-polaris">
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div>
+                                                        <pre class="prettyprint linenums">
+													 $('.icheck-box,.icheck-radio').iCheck({ checkboxClass: 'icheckbox_minimal-red', radioClass: 'iradio_minimal-red', increaseArea: '20%' // optional });
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <fieldset class="default-fieldset">
+                                                        <legend>Line Theme</legend>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" checked class="icheck-box-line">
+                                                                    <label>Checkbox 1</label>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Checkbox</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="checkbox" class="icheck-box-line"><label>Checkbox 2</label>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Checked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" class="icheck-radio-line" name="iCheck5" checked><label>Radio button 1</label>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label">Unchecked Radio</label>
+                                                            <div class="col-lg-10">
+                                                                <div class="styled-chekbox">
+                                                                    <input type="radio" name="iCheck5" class="icheck-radio-line"><label>Radio button 2</label>
+                                                                </div>
+                                                                <span class="checkbox-label">Label</span>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div>
+                                                        <pre class="prettyprint linenums">
+													 $('.icheck-box,.icheck-radio').iCheck({ checkboxClass: 'icheckbox_minimal-red', radioClass: 'iradio_minimal-red', increaseArea: '20%' // optional });
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 widget-module">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class=" icon-paragraph-justify-2"></i></span>
+                                    <h4 class="pull-left">Input Mask</h4>
+                                    <div class="pull-right widget-action">
+                                        <ul>
+                                            <li><a href="#" class="widget-collapse"><i class="icon-arrow-down"></i></a></li>
+                                            <li><a href="#" class="widget-remove"><i class=" icon-remove-sign"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Date</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" id="date" name="file">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">Phone</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" id="phone" name="file">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">TIN</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" id="tin" name="file">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">SSN</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" id="ssn" name="file">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 widget-module">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="icon-menu"></i></span>
+                                    <h4 class="pull-left">Select</h4>
+                                    <div class="pull-right widget-action">
+                                        <ul>
+                                            <li><a href="#" class="widget-collapse"><i class="icon-arrow-down"></i></a></li>
+                                            <li><a href="#" class="widget-remove"><i class=" icon-remove-sign"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="col-lg-5 control-label">Multiple Select</label>
+                                                    <div class="col-lg-7">
+                                                        <select id="select1" multiple="multiple">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                                <option value="MT">Montana</option>
+                                                                <option value="NE">Nebraska</option>
+                                                                <option value="NM">New Mexico</option>
+                                                                <option value="ND">North Dakota</option>
+                                                                <option value="UT">Utah</option>
+                                                                <option value="WY">Wyoming</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IL">Illinois</option>
+                                                                <option value="IA">Iowa</option>
+                                                                <option value="KS">Kansas</option>
+                                                                <option value="KY">Kentucky</option>
+                                                                <option value="LA">Louisiana</option>
+                                                                <option value="MN">Minnesota</option>
+                                                                <option value="MS">Mississippi</option>
+                                                                <option value="MO">Missouri</option>
+                                                                <option value="OK">Oklahoma</option>
+                                                                <option value="SD">South Dakota</option>
+                                                                <option value="TX">Texas</option>
+                                                                <option value="TN">Tennessee</option>
+                                                                <option value="WI">Wisconsin</option>
+                                                            </optgroup>
+                                                            <optgroup label="Eastern Time Zone">
+                                                                <option value="CT">Connecticut</option>
+                                                                <option value="DE">Delaware</option>
+                                                                <option value="FL">Florida</option>
+                                                                <option value="GA">Georgia</option>
+                                                                <option value="IN">Indiana</option>
+                                                                <option value="ME">Maine</option>
+                                                                <option value="MD">Maryland</option>
+                                                                <option value="MA">Massachusetts</option>
+                                                                <option value="MI">Michigan</option>
+                                                                <option value="NH">New Hampshire</option>
+                                                                <option value="NJ">New Jersey</option>
+                                                                <option value="NY">New York</option>
+                                                                <option value="NC">North Carolina</option>
+                                                                <option value="OH">Ohio</option>
+                                                                <option value="PA">Pennsylvania</option>
+                                                                <option value="RI">Rhode Island</option>
+                                                                <option value="SC">South Carolina</option>
+                                                                <option value="VT">Vermont</option>
+                                                                <option value="VA">Virginia</option>
+                                                                <option value="WV">West Virginia</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-5 control-label">Select</label>
+                                                    <div class="col-lg-7">
+                                                        <select id="select2">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                                <option value="MT">Montana</option>
+                                                                <option value="NE">Nebraska</option>
+                                                                <option value="NM">New Mexico</option>
+                                                                <option value="ND">North Dakota</option>
+                                                                <option value="UT">Utah</option>
+                                                                <option value="WY">Wyoming</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IL">Illinois</option>
+                                                                <option value="IA">Iowa</option>
+                                                                <option value="KS">Kansas</option>
+                                                                <option value="KY">Kentucky</option>
+                                                                <option value="LA">Louisiana</option>
+                                                                <option value="MN">Minnesota</option>
+                                                                <option value="MS">Mississippi</option>
+                                                                <option value="MO">Missouri</option>
+                                                                <option value="OK">Oklahoma</option>
+                                                                <option value="SD">South Dakota</option>
+                                                                <option value="TX">Texas</option>
+                                                                <option value="TN">Tennessee</option>
+                                                                <option value="WI">Wisconsin</option>
+                                                            </optgroup>
+                                                            <optgroup label="Eastern Time Zone">
+                                                                <option value="CT">Connecticut</option>
+                                                                <option value="DE">Delaware</option>
+                                                                <option value="FL">Florida</option>
+                                                                <option value="GA">Georgia</option>
+                                                                <option value="IN">Indiana</option>
+                                                                <option value="ME">Maine</option>
+                                                                <option value="MD">Maryland</option>
+                                                                <option value="MA">Massachusetts</option>
+                                                                <option value="MI">Michigan</option>
+                                                                <option value="NH">New Hampshire</option>
+                                                                <option value="NJ">New Jersey</option>
+                                                                <option value="NY">New York</option>
+                                                                <option value="NC">North Carolina</option>
+                                                                <option value="OH">Ohio</option>
+                                                                <option value="PA">Pennsylvania</option>
+                                                                <option value="RI">Rhode Island</option>
+                                                                <option value="SC">South Carolina</option>
+                                                                <option value="VT">Vermont</option>
+                                                                <option value="VA">Virginia</option>
+                                                                <option value="WV">West Virginia</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-5 control-label">Select with placeholder</label>
+                                                    <div class="col-lg-7">
+                                                        <select id="select3">
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option>...</option>
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                                <option value="MT">Montana</option>
+                                                                <option value="NE">Nebraska</option>
+                                                                <option value="NM">New Mexico</option>
+                                                                <option value="ND">North Dakota</option>
+                                                                <option value="UT">Utah</option>
+                                                                <option value="WY">Wyoming</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IL">Illinois</option>
+                                                                <option value="IA">Iowa</option>
+                                                                <option value="KS">Kansas</option>
+                                                                <option value="KY">Kentucky</option>
+                                                                <option value="LA">Louisiana</option>
+                                                                <option value="MN">Minnesota</option>
+                                                                <option value="MS">Mississippi</option>
+                                                                <option value="MO">Missouri</option>
+                                                                <option value="OK">Oklahoma</option>
+                                                                <option value="SD">South Dakota</option>
+                                                                <option value="TX">Texas</option>
+                                                                <option value="TN">Tennessee</option>
+                                                                <option value="WI">Wisconsin</option>
+                                                            </optgroup>
+                                                            <optgroup label="Eastern Time Zone">
+                                                                <option value="CT">Connecticut</option>
+                                                                <option value="DE">Delaware</option>
+                                                                <option value="FL">Florida</option>
+                                                                <option value="GA">Georgia</option>
+                                                                <option value="IN">Indiana</option>
+                                                                <option value="ME">Maine</option>
+                                                                <option value="MD">Maryland</option>
+                                                                <option value="MA">Massachusetts</option>
+                                                                <option value="MI">Michigan</option>
+                                                                <option value="NH">New Hampshire</option>
+                                                                <option value="NJ">New Jersey</option>
+                                                                <option value="NY">New York</option>
+                                                                <option value="NC">North Carolina</option>
+                                                                <option value="OH">Ohio</option>
+                                                                <option value="PA">Pennsylvania</option>
+                                                                <option value="RI">Rhode Island</option>
+                                                                <option value="SC">South Carolina</option>
+                                                                <option value="VT">Vermont</option>
+                                                                <option value="VA">Virginia</option>
+                                                                <option value="WV">West Virginia</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 widget-module">
+                            <div class="box-widget">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class=" icon-paragraph-justify-2"></i></span>
+                                    <h4 class="pull-left">UI Spinner</h4>
+                                    <div class="pull-right widget-action">
+                                        <ul>
+                                            <li><a href="#" class="widget-collapse"><i class="icon-arrow-down"></i></a></li>
+                                            <li><a href="#" class="widget-remove"><i class=" icon-remove-sign"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Prepended input</label>
+                                                    <div class="col-lg-9">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">@</span>
+                                                            <input type="text" placeholder="Username" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Appended input</label>
+                                                    <div class="col-lg-9">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Combined input</label>
+                                                    <div class="col-lg-9">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">$</span>
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Appended button and input </label>
+                                                    <div class="col-lg-9">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-default">Go!</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Prepended input dropdown</label>
+                                                    <div class="col-lg-9">
+                                                        <div class="input-group">
+                                                            <div class="input-group-btn">
+                                                                <button tabindex="-1" class="btn btn-default" type="button">Action</button>
+                                                                <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul role="menu" class="dropdown-menu">
+                                                                    <li><a href="#">Action</a></li>
+                                                                    <li><a href="#">Another action</a></li>
+                                                                    <li><a href="#">Something else here</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Separated link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Appended input dropdown</label>
+                                                    <div class="col-lg-9">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control">
+                                                            <div class="input-group-btn">
+                                                                <button tabindex="-1" class="btn btn-default" type="button">Action</button>
+                                                                <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul role="menu" class="dropdown-menu pull-right">
+                                                                    <li><a href="#">Action</a></li>
+                                                                    <li><a href="#">Another action</a></li>
+                                                                    <li><a href="#">Something else here</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Separated link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prettify.js"></script>
+        <!--jQuery touch scroll -->
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.hoverIntent.minified.js"></script>
+        <!--jQuery leftbar navigation accordion -->
+        <script src="js/jquery.dcjqaccordion.2.7.js"></script>
+        <!--jQuery styled checkbox and radio -->
+        <script src="js/jquery.icheck.js"></script>
+        <!--jQuery atags input -->
+        <script src="js/jquery.tagsinput.js"></script>
+        <!--jQuery advanced select box -->
+        <script src="js/jquery-select.js"></script>
+        <!--jQuery inpiut mask -->
+        <script src="js/jquery.maskedinput.js"></script>
+        <!-- Theme common script -->
+        
+        <script src='js/common-script.js'></script>
+        <!-- IE older version pictographic font support -->
+        <!--[if lte IE 7]>
+                        <script src="js/font-alpona-ie7.js"></script>
+                        <![endif]-->
+        <script>
+            /*===ICHECK===*/
+            $(function() {
+                $('.icheck-box,.icheck-radio').iCheck({
+                    checkboxClass: 'icheckbox_minimal-red',
+                    radioClass: 'iradio_minimal-red',
+                    increaseArea: '20%' // optional
+                });
+                $('.icheck-box-flat,.icheck-radio-flat').iCheck({
+                    checkboxClass: 'icheckbox_flat-red',
+                    radioClass: 'iradio_flat-red'
+                });
+                $('.icheck-box-futurico,.icheck-radio-futurico').iCheck({
+                    checkboxClass: 'icheckbox_futurico',
+                    radioClass: 'iradio_futurico',
+                    increaseArea: '20%' // optional
+                });
+                $('.icheck-box-polaris,.icheck-radio-polaris').iCheck({
+                    checkboxClass: 'icheckbox_polaris',
+                    radioClass: 'iradio_polaris',
+                    increaseArea: '-10' // optional
+                });
+                $('.icheck-box-square,.icheck-radio-square').iCheck({
+                    checkboxClass: 'icheckbox_square',
+                    radioClass: 'iradio_square',
+                    increaseArea: '20%' // optional
+                });
+                $('.icheck-box-line,.icheck-radio-line').each(function() {
+                    var self = $(this),
+                            label = self.next(),
+                            label_text = label.text();
+                    label.remove();
+                    self.iCheck({
+                        checkboxClass: 'icheckbox_line-red',
+                        radioClass: 'iradio_line-red',
+                        insert: '<div class="icheck_line-icon"></div>' + label_text
+                    });
+                });
+            });
+            /*==TAGS INPUT==*/
+            $(function() {
+                $('#tags_1').tagsInput({width: 'auto'});
+                $('#tags_2').tagsInput({
+                    width: 'auto',
+                    onChange: function(elem, elem_tags)
+                    {
+                        var languages = ['php', 'ruby', 'javascript'];
+                        $('.tag', elem_tags).each(function()
+                        {
+                            if ($(this).text().search(new RegExp('\\b(' + languages.join('|') + ')\\b')) >= 0)
+                                $(this).css('background-color', 'yellow');
+                        });
+                    }
+                });
+            });
+            /*===JQUERY SELECT==*/
+            $(function() {
+                $("#select1").select2();
+                $("#select2").select2();
+                $("#select3").select2({
+                    placeholder: "Select a State",
+                    allowClear: true
+                });
+            });
+            /*===INPUT MASK==*/
+            jQuery(function($) {
+                $("#date").mask("99/99/9999");
+                $("#phone").mask("(999) 999-9999");
+                $("#tin").mask("99-9999999");
+                $("#ssn").mask("999-99-9999");
+            });
+            /*===UI SPINNER==*/
+            $(function() {
+                $("#spinner").spinner({
+                    step: 0.01,
+                    numberFormat: "n"
+                });
+            });
+        </script>
+    </body>
+</html>
