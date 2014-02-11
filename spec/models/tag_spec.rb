@@ -2,7 +2,7 @@ require 'spec_helper'
 describe Tag do
 
   before :each do
-    Tag.clear
+    Tag.unscoped.each { |t| t.remove }
     FactoryGirl.create :tag1
     FactoryGirl.create :tag2
   end
@@ -25,6 +25,12 @@ describe Tag do
       end
     end
 
+  end
+
+  describe 'has field' do
+    it 'descr' do
+      Tag.new.descr.should eql ''
+    end
   end
 
 end
