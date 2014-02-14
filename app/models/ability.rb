@@ -132,7 +132,7 @@ class Ability
       r.is_public && !r.is_trash
     end
     
-    can [ :new ], Venue
+    can [ :new, :index, :show, :not_found ], Venue
 
     can [ :index, :show, :view ], Video
 
