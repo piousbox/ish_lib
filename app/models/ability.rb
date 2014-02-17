@@ -95,6 +95,8 @@ class Ability
     ###
     ### applies to all users
     ###
+
+    can [ :render_partial ], AuxModel
     
     can [ :new ], Event
 
