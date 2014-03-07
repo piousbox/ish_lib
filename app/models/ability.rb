@@ -62,7 +62,7 @@ class Ability
         can [ :manage ], Feature
         can [ :manage ], Gallery
         can [ :manage ], Newsitem
-        can [ :manage ], Node
+        can [ :manage ], Nodeitem
         can [ :manage ], Photo
         can [ :manage ], Report
         can [ :manage ], Site
