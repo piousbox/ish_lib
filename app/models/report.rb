@@ -4,38 +4,39 @@ class Report
 
   field :name, :type => String
   validates :name, :presence => true
-  index({ :name => 1 }, { :unique => true, :name => "name_index" })
+  index({ :name => 1 }, { :unique => true })
+  index({ :name => 1, :is_trash => 1 })
 
   field :name_seo, :type => String
   validates :name_seo, :uniqueness => true, :presence => true
-  index({ :name_seo => 1 }, { :unique => true, :name => "name_seo_index" })
+  index({ :name_seo => 1 }, { :unique => true })
 
   field :descr, :type => String 
 
   field :is_trash, :type => Boolean, :default => false
-  index({ :is_trash => 1, :is_public => 1 }, { :name => "default_index" })
+  index :is_trash => 1, :is_public => 1 
 
   field :is_public, :type => Boolean, :default => true
-  index({ :is_public => 1 }, { :name => "is_public_index" })
+  index({ :is_public => 1 })
   scope :public, where( :is_public => true )
 
   field :is_feature, :type => Boolean, :default => false
-  index({ :is_feature => 1 }, { :name => "is_feature_index" })
+  index({ :is_feature => 1 })
 
   field :is_done, :type => Boolean, :default => true
-  index({ :is_done => 1 }, { :name => "is_done_index" })
+  index({ :is_done => 1 })
   
   field :x, :type => Float
   field :y, :type => Float
 
   field :lang, :type => String, :default => 'en'
-  index({ :lang => 1 }, { :name => "lang_index" })
+  index({ :lang => 1 })
    
   field :username, :type => String, :default => 'anonymous'
   validates :username, :presence => true, :allow_nil => false
   belongs_to :user
   validates :user, :presence => true, :allow_nil => false
-  index({ :username => 1 }, { :name => "username_index" })
+  index({ :username => 1 })
 
   field :subhead, :type => String
   

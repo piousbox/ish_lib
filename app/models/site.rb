@@ -1,4 +1,6 @@
+
 class Site
+
   include Mongoid::Document
   include Mongoid::Timestamps
   include AuxModel
@@ -20,6 +22,7 @@ class Site
   field :is_video_enabled, :type => Boolean, :default => false
   field :is_resume_enabled, :type => Boolean, :default => false
   field :is_ads_enabled, :type => Boolean, :default => true
+  field :is_trash, :type => Boolean, :default => false
 
   has_many :reports
   has_many :galleries

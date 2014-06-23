@@ -78,4 +78,10 @@ class User
     16
   end
 
+  def self.clear
+    if Rails.env.test?
+      User.unscoped.each { |u| u.remove }
+    end
+  end
+
 end
