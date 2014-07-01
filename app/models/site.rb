@@ -23,6 +23,7 @@ class Site
   field :is_resume_enabled, :type => Boolean, :default => false
   field :is_ads_enabled, :type => Boolean, :default => true
   field :is_trash, :type => Boolean, :default => false
+  field :is_primary, :type => Boolean, :default => false
 
   has_many :reports
   has_many :galleries
@@ -32,9 +33,7 @@ class Site
   embeds_many :features
   embeds_many :newsitems
   
-  # in testing this I think fails everything?
-  #
-  # default_scope where( :is_trash => false ).order_by( :name => :asc, :lang => :asc )
+  default_scope where( :is_trash => false ).order_by( :name => :asc, :lang => :asc )
 
   set_callback :create, :before do |doc|
     if Site.where( :lang => doc.lang, :domain => doc.domain ).length > 0

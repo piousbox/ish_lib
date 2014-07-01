@@ -1,4 +1,6 @@
+
 class Photo
+
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Paperclip

@@ -1,0 +1,11 @@
+/*
+ *
+ *= require lightbox
+ *
+ *= require foundation
+ *= require_tree ./manager
+ *
+ *= require_directory ./manager
+ *= require_directory ./common_2
+ *
+*/
