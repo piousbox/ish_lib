@@ -30,7 +30,7 @@ body
 
     > hr
       margin: 0
-
+    .menu
   .menu-main
     margin-top: 1em
 
