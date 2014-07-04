@@ -113,7 +113,7 @@ class Ability
       photo.is_public && !photo.is_trash
     end
     
-    can [ :index, :search, :not_found, :new ], Report
+    can [ :search, :not_found, :new ], Report
     can [ :show ], Report do |r|
       r.is_public && !r.is_trash
     end

@@ -1,4 +1,6 @@
+
 class City  
+
   include Mongoid::Document
   include Mongoid::Timestamps
 
@@ -58,7 +60,8 @@ class City
   
   def self.list
     out = self.order_by( :name => :asc )
-    [['', nil]] + out.map { |item| [ item.name, item.id ] }
+    # no_city = City.where( :cityname => 'no_city' ).first || City.create( :cityname => 'no_city', :name => 'No City' )
+    [] + out.map { |item| [ item.name, item.id ] }
   end
 
   def self.list_citynames lang = 'en'
