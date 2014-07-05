@@ -9,7 +9,6 @@ class Site
   field :lang, :type => String, :default => 'en'
   field :title, :type => String
   field :subhead, :type => String
-
   field :home_redirect_path, :type => String, :default => nil
 
   field :n_features, :type => Integer, :default => 4
@@ -24,6 +23,9 @@ class Site
   field :is_ads_enabled, :type => Boolean, :default => true
   field :is_trash, :type => Boolean, :default => false
   field :is_primary, :type => Boolean, :default => false
+
+  field :homepage_layout, :type => String, :default => 'blog'
+  field :layout, :type => String, :default => 'application'
 
   has_many :reports
   has_many :galleries
@@ -62,4 +64,8 @@ class Site
     Site.where( :domain => 'travel-guide.mobi', :lang => 'en' ).first
   end
 
+  def its_locales
+    Site.where( :domain => self.domain ).map { |s| s.lang.to_sym }
+  end
+  
 end
