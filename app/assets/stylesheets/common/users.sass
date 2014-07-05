@@ -1,7 +1,7 @@
 @import 'vars'
 
 .profile-photo
-  @extend .thumb
+  @extend .thumb !optional
 
 .inline-registration
   display: none
@@ -10,7 +10,7 @@
   .users-list
 
     .inner
-      @extend .box
+      @extend .box !optional
     .item:nth-child(2n+1)
       clear: both
 
