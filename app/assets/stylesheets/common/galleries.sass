@@ -3,7 +3,7 @@
 
 .related
   .galleries
-    @extend ._galleries_list
+    @extend ._galleries_list !optional
 
 .show-mini .show_mini_link,
 .show-long .show_long_link,
@@ -38,13 +38,13 @@
         a
           border: 1px solid #6666ff
           padding: $margin/2
-          @extend ._round-corners
+          @extend ._round-corners !optional
 
     .col-1
-      @extend .span-12
+      @extend .span-12 !optional
 
     .col-2
-      @extend .span-12
+      @extend .span-12 !optional
       @extend .last
 
     .thumbs img,
@@ -56,7 +56,7 @@
     .related-galleries
       .items
         .item
-          @extend .box
+          @extend .box !optional
           h4
             margin-top: 0
               
@@ -129,22 +129,22 @@
     margin-bottom: 4px
 
   img
-    @extend .thumb
+    @extend .thumb !optional
 
 
 .galleries-features
-  @extend .span-12
-  @extend ._feature_list
+  @extend .span-12 !optional
+  @extend ._feature_list !optional
 
   .item
-    @extend .span-12
+    @extend .span-12 !optional
 
   h2
     // @extend ._feature_h2
     display: none
 
   img
-    @extend ._img_small
+    @extend ._img_small !optional
 
 #galleries_index
   .Lapplication-mini
@@ -198,7 +198,6 @@ form#new_gallery
     margin-bottom: 1em
         
     li
-      @extend ._block
       display: block
 
   .loading-a

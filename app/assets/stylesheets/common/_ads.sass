@@ -3,8 +3,6 @@
 
 .ad
   display: inline-block
-  border: $border_white
-  // background: gray
 
 .ad_large_rectangle,
 .ad-large-rectangle
@@ -72,8 +70,8 @@
 
 .ad-small-square-gray,
 .ad-small-square-blue,
-  @extend ._round-corners
-  @extend .box
+  @extend ._round-corners !optional
+  @extend .box !optional
   padding: 10px 0 10px 0
   text-align: center
 
