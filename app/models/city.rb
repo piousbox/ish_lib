@@ -105,6 +105,9 @@ class City
   def self.feature
     City.where( :is_feature => true )
   end
+
+  def add_newsitem doc
+  end
   
 end
 

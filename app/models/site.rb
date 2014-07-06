@@ -7,6 +7,7 @@ class Site
 
   field :domain, :type => String
   field :lang, :type => String, :default => 'en'
+  validates_uniqueness_of :lang, :scope => :domain 
   field :title, :type => String
   field :subhead, :type => String
   field :home_redirect_path, :type => String, :default => nil
