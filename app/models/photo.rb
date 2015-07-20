@@ -49,6 +49,8 @@ class Photo
     25
   end
 
+  validates_attachment_content_type :photo, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+
   set_callback(:create, :before) do |doc|
 #    if doc.is_public
 #      Site.languages.each do |lang|
