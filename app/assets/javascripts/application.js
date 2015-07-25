@@ -1,5 +1,5 @@
 // 
-//
+//= require global
 //
 //= require jquery-1.7.1
 //= require jquery_ujs
@@ -9,9 +9,9 @@
 //= require jquery-file-upload/jquery.iframe-transport
 //= require jquery-file-upload/jquery.fileupload
 //
-//= require tinymce
-//= require tinymce/langs/en
-//= require tinymce/themes/advanced/editor_template
+//= require tiny_mce/tiny_mce
+//= require tiny_mce/langs/en
+//= require tiny_mce/themes/advanced/editor_template
 //
 //= require lightbox
 //

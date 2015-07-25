@@ -29,7 +29,7 @@ class Photo
   field :is_public, :type => Boolean, :default => true  
   field :is_trash, :type => Boolean, :default => false
     
-  default_scope where( :is_trash => false, :is_public => true )
+  default_scope ->{ where({ :is_trash => false, :is_public => true }) }
 
   has_mongoid_attached_file :photo, 
     :styles => {
@@ -42,7 +42,7 @@ class Photo
     :large => '950x650>'
   },
     :storage => :s3,
-    :s3_credentials => S3_CREDENTIALS,
+    :s3_credentials => ::S3_CREDENTIALS,
     :path => "photos/:style/:id/:filename"
 
   def self.n_per_manager_gallery

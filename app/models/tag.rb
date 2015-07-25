@@ -28,7 +28,9 @@ class Tag
 
   belongs_to :site
 
-  default_scope where( :is_public => true, :is_trash => false ).order_by( :name => :asc )
+  default_scope ->{
+    where({ :is_public => true, :is_trash => false }).order_by({ :name => :asc })
+  }
 
   before_create do |d|
     if d.name_seo.blank?

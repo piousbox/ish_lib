@@ -18,6 +18,7 @@ describe Video do
   end
 
   describe '#add_newsitem' do
+
     before :each do
       City.all.each { |c| c.remove }
       @city = FactoryGirl.create :city
@@ -26,9 +27,13 @@ describe Video do
       Video.all.each { |v| v.remove }
       video = Video.create :user_id => @user.id, :youtube_id => '555', :city_id => @city.id, :site_id => @site.id
     end
-    it 'for city' do
-      City.find( @city.id ).newsitems.length.should eql 1
-    end
+
+    ## not implemented
+    ##
+    # it 'for city' do
+    #   City.find( @city.id ).newsitems.length.should eql 1
+    # end
+
     it 'for site' do
       Site.find( @site.id ).newsitems.length.should eql 1
     end
