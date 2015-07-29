@@ -48,7 +48,7 @@ class City
 
   field :calendar_frame, :type => String
   
-  default_scope order_by( :name => :asc )
+  default_scope ->{ order_by({ :name => :asc }) }
 
   def self.feature
     where( :is_feature => true )

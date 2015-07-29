@@ -3,6 +3,9 @@
 
 ish_lib powers the microsites2, microsites3 frameworks.
 
+It looks like branch master should be deployed. If you deploy branch master-0.7.0, merge it to master, then deploy master.
+This has to do with shallow clone and references not being trees.
+
 == Some tasks ==
 
 be rake sitemaps:generate lang=en domain=travel-guide.mobi verbose=true

@@ -36,7 +36,7 @@ class Site
   embeds_many :features
   embeds_many :newsitems
   
-  default_scope where( :is_trash => false ).order_by( :name => :asc, :lang => :asc )
+  default_scope ->{ where({ :is_trash => false }).order_by({ :name => :asc, :lang => :asc }) }
 
   set_callback :create, :before do |doc|
     if Site.where( :lang => doc.lang, :domain => doc.domain ).length > 0

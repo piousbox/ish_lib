@@ -26,7 +26,7 @@ class Newsitem
   field :downvoting_users, :type => Array, :default => []
   field :is_feature, :type => Boolean, :default => false
 
-  default_scope order_by( :created_at => :desc )
+  default_scope ->{ order_by({ :created_at => :desc }) }
 
   def self.from_params item
     n = Newsitem.new

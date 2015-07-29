@@ -15,12 +15,12 @@ class Venue
   field :descr, :type => String
   
   field :is_trash, :type => Boolean, :default => false
-  scope :fresh, where( :is_trash => false )
-  scope :trash, where( :is_trash => true )
+  scope :fresh, ->{ where({ :is_trash => false }) }
+  scope :trash, ->{ where({ :is_trash => true }) }
 
   field :is_public, :type => Boolean, :default => true
-  scope :public, where( :is_public => true )
-  scope :not_public, where( :is_public => false )
+  scope :public, ->{ where({ :is_public => true }) }
+  scope :not_public, ->{ where({ :is_public => false }) }
 
   field :is_feature, :type => Boolean, :default => false
 
