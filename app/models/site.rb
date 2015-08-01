@@ -6,8 +6,10 @@ class Site
   include AuxModel
 
   field :domain, :type => String
+
   field :lang, :type => String, :default => 'en'
-  validates_uniqueness_of :lang, :scope => :domain 
+  # validates :lang, { :uniqueness => :true, :scope => :domain }
+
   field :title, :type => String
   field :subhead, :type => String
   field :home_redirect_path, :type => String, :default => nil
@@ -36,7 +38,7 @@ class Site
   embeds_many :features
   embeds_many :newsitems
   
-  default_scope ->{ where({ :is_trash => false }).order_by({ :name => :asc, :lang => :asc }) }
+  default_scope ->{ where({ :is_trash => false }).order_by({ :domain => :asc, :lang => :asc }) }
 
   set_callback :create, :before do |doc|
     if Site.where( :lang => doc.lang, :domain => doc.domain ).length > 0

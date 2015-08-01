@@ -1,11 +1,15 @@
+
 class User  
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   # Setup accessible (or protected) attributes for your model
   # attr_accessible :email, :password, :password_confirmation, :remember_me
 
   ## Database authenticatable
-  field :email,              type: String, default: ""
+  field :email, type: String, default: ""
+  validates :email, :presence => true, :uniqueness => true
+
   field :encrypted_password, type: String, default: ""
 
   ## Recoverable
@@ -32,7 +36,6 @@ class User
   # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
-  include Mongoid::Timestamps
   
   # :recoverable, :trackable :rememberable,
   # :token_authenticatable, 
@@ -43,20 +46,15 @@ class User
   # devise :encryptable, :encryptor => :sha1base64
   #
   #
-  #field :confirmed_at, :type => DateTime
-  #field :confirmation_token, :type => String
-  #field :confirmation_sent_at, :type => DateTime
+  # field :confirmed_at, :type => DateTime
+  # field :confirmation_token, :type => String
+  # field :confirmation_sent_at, :type => DateTime
   
-  field :email, :type => String
-  validates :email, :presence => true, :uniqueness => true
-
   field :username, :type => String
   validates :username, :presence => true, :uniqueness => true
   
   field :name, :type => String
   validates :name, :presence => true
-  
-  field :encrypted_password, :type => String
   
   field :group_id, :type => Integer, :default => 3
 
@@ -66,7 +64,6 @@ class User
   field :stackoverflow_path, :type => String
 
   field :is_feature, :type => Boolean, :default => false
-  # @deprecated
   field :is_trash, :type => Boolean, :default => false
 
   field :display_ads, :type => Boolean, :default => true
@@ -85,14 +82,14 @@ class User
   belongs_to :current_city, :class_name => 'City', :inverse_of => :city_users
 
   def self.list conditions = { :is_trash => false }
-    out = self.where( conditions).order_by( :name => :asc )
+    out = self.where( conditions ).order_by( :name => :asc )
     [['', nil]] + out.map { |item| [ item.name, item.id ] }
   end
 
   embeds_many :newsitems
 
   def self.all
-    self.order_by( :created_at => :desc )
+    self.where( :is_trash => false ).order_by( :created_at => :desc )
   end
 
   def create_newsitem args = {}
