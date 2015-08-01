@@ -25,5 +25,5 @@ link: app/assets, app/models, lib/, data/, vendor/assets
 
 == Version ==
 
-master-0.7.0
+master-0.7.1
 
