@@ -36,8 +36,6 @@ class Video
   end
 
   set_callback( :create, :before ) do |doc|
-    puts! doc, "before create"
-    puts! doc.city, "doc city"
     if doc.is_public
       doc.city.add_newsitem( doc ) unless doc.city.blank?
       doc.site.add_newsitem( doc ) unless doc.site.blank?

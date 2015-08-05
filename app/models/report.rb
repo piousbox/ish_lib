@@ -103,11 +103,15 @@ class Report
         end
       end 
 
+      #
+      # hidden
+      proc do # nothing
       unless doc.site.blank?
-        username = doc.user.username || 'anon'
-        n = Newsitem.new :report_id => doc.id, :username => username
-        doc.site.newsitems << n
-        doc.site.save
+        username = doc.user.username || 'anonymous'
+        doc.site.newsitems << Newsitem.new({ :report_id => doc.id, :username => username, :descr => doc.subhead, :name => doc.name })
+        flag = doc.site.save
+        puts! flag unless flag
+      end
       end
 
       unless doc.city.blank?
