@@ -25,8 +25,8 @@ class AppModel2
 
   private
 
-  def puts! arg
-    puts '+++ +++'
+  def puts! arg, label=""
+    puts "+++ +++ #{label}"
     puts arg.inspect
   end
   

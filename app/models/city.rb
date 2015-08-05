@@ -107,6 +107,10 @@ class City
   end
 
   def add_newsitem doc
+    # puts! self.newsitems, "city newsitems are"
+    if 'Video' == doc.class.name
+      self.newsitems << Newsitem.new({ :descr => '', :username => '', :video => doc })
+    end
   end
   
 end
