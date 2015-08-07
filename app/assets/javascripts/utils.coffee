@@ -7,9 +7,11 @@ U.setup_accordion = ->
     $( "#accordion" ).accordion()
 
 $(document).ready ->
+  console.log('herehere')
+  
   $('.addToggle').click ->
-    $(this).next().toggle()
-
+    $(this).next().toggle(500)
+    
   $('.help_toggle').mouseenter ->
     $(this).next().show()
   $('.help_toggle').mouseleave ->

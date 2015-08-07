@@ -9,17 +9,17 @@ class Gallery < AppModel2
   field :username, :type => String
   
   field :name, :type => String
-  validates :name, :uniqueness => true, :allow_nil => false
+  validates :name, :uniqueness => true # , :allow_nil => false
 
   field :galleryname, :type => String
-  validates :galleryname, :uniqueness => true, :allow_nil => false
+  validates :galleryname, :uniqueness => true # , :allow_nil => false
 
   field :subhead, :type => String
   field :descr, :type => String
   field :lang, :type => String, :default => 'en'
 
   # not necessary because AppModel2
-  # default_scope where( :is_public => true, :is_trash => false ).order_by( :created_at => :desc )
+  # default_scope ->{ where( :is_public => true, :is_trash => false ).order_by( :created_at => :desc ) }
 
   has_many :photos
 
