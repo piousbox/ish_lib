@@ -35,7 +35,7 @@ gem 'cancan', '~> 1.5'
 gem "bcrypt-ruby", :require => "bcrypt"
 
 gem 'aws-sdk'
-gem 'paperclip'
+gem 'paperclip', '0.0.9'
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem "aws-s3",            :require => "aws/s3"
 gem "recaptcha",         :require => "recaptcha/rails"
