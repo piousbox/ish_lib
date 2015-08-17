@@ -9,8 +9,8 @@ U.setup_accordion = ->
 $(document).ready ->
   console.log('herehere')
   
-  # $('.addToggle').click ->
-  #   $(this).next().toggle(500)
+  $('.addToggle').click ->
+    $(this).next().toggle(500)
     
   $('.help_toggle').mouseenter ->
     $(this).next().show()

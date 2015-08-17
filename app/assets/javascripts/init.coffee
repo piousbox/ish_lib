@@ -3,9 +3,6 @@ if '#_=_' == window.location.hash
   window.location.href = window.location.href.slice(0, -1)
       
 $(document).ready ->
-  $('.addToggle').click ->
-    $(this).next().toggle()
-
   $("#layout_set").change ->
       $("#set_layout form").submit()
         
