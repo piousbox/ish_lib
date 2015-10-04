@@ -7,8 +7,7 @@ U.setup_accordion = ->
     $( "#accordion" ).accordion()
 
 $(document).ready ->
-  console.log('herehere')
-  
+
   $('.addToggle').click ->
     $(this).next().toggle(500)
     
@@ -23,8 +22,7 @@ $(document).ready ->
   if $(".tinymce").length > 0
     tinyMCE.init
       mode: "specific_textareas",
-      editor_selector: 'tinymce',
-      theme: 'advanced'
+      editor_selector: 'tinymce'
 
   if $("#temp_layout").length > 0
     MyApp.addInitializer (options) ->

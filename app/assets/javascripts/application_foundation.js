@@ -8,24 +8,22 @@
 //= require jquery-file-upload/jquery.iframe-transport
 //= require jquery-file-upload/jquery.fileupload
 //
-//= require tiny_mce/tiny_mce
-//= require tiny_mce/langs/en
-//= require tiny_mce/themes/advanced/editor_template
+//= require tinymce
 //
 //= require lightbox
 //
 //= require foundation/foundation
+//
 //
 //= require_self
 //= require ./photos_multiadd
 //= require ./galleries
 //= require ./utils
 //
-//
 
 var U = {};
 
 $(document).ready( function() {
-  U.setup_accordion();
-
+    U.setup_accordion();    
 });
+

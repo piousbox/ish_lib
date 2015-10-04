@@ -1,4 +1,5 @@
 class Ability
+  
   include CanCan::Ability
   def initialize(user)
     
@@ -38,7 +39,7 @@ class Ability
       end
 
       can [ :new, :create, :search, :index, :my_index ], Report
-      can [ :edit, :update ], Report do |r|
+      can [ :edit, :update, :show ], Report do |r|
         r.user == user
       end
       
