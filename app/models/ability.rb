@@ -9,7 +9,7 @@ class Ability
     unless user.blank?
       
       can [ :create, :new ], Gallery
-      can [ :edit, :update, :destroy_photo ], Gallery do |g|
+      can [ :edit, :update, :destroy_photo, :show, :show_long ], Gallery do |g|
         g.user == user
       end
 
