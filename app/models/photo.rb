@@ -22,7 +22,7 @@ class Photo
   belongs_to :gallery
   
   field :name, :type => String
-  # field :descr, :type => String
+  field :descr, :type => String
 
   field :weight, :type => Integer, :default => 10
   
