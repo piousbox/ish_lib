@@ -67,6 +67,14 @@ class Site
     Site.where( :domain => 'travel-guide.mobi', :lang => 'en' ).first
   end
 
+  def n_reports
+    self.reports.unscoped.where( :is_trash => false ).length
+  end
+
+  def n_private_reports
+    self.reports.unscoped.where( :is_public => false, :is_trash => false ).length
+  end
+  
   def its_locales
     Site.where( :domain => self.domain ).map { |s| s.lang.to_sym }
   end
