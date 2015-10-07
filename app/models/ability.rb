@@ -39,7 +39,7 @@ class Ability
       end
 
       can [ :new, :create, :search, :index, :my_index ], Report
-      can [ :edit, :update, :show ], Report do |r|
+      can [ :edit, :update, :show, :delete ], Report do |r|
         r.user == user
       end
       
@@ -58,7 +58,7 @@ class Ability
         can [ :manage ], CitiesUser
         can [ :manage ], City
         can [ :manage ], Country
-        # can [ :manage ], Day
+        can [ :manage ], Day
         can [ :manage ], Event
         can [ :manage ], Feature
         can [ :manage ], Gallery
@@ -75,7 +75,9 @@ class Ability
         can [ :manage ], Welcome
         can [ :manage ], Manager
         can [ :manage ], ManagerCity
+        can [ :manage ], ManagerFeature
         can [ :manage ], ManagerGallery
+        can [ :manage ], ManagerNewsitem
         can [ :manage ], ManagerPhoto
         can [ :manage ], ManagerReport
         can [ :manage ], ManagerTag
