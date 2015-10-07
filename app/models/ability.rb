@@ -99,6 +99,8 @@ class Ability
     ### applies to all users
     ###
 
+    can [ :index, :show ], City
+
     can [ :render_partial ], AuxModel
     
     can [ :new ], Event

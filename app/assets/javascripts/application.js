@@ -13,8 +13,6 @@
 //= require tiny_mce/langs/en
 //= require tiny_mce/themes/advanced/editor_template
 //
-//= require lightbox
-//
 // require handlebars.runtime
 // require_tree ./templates
 //
