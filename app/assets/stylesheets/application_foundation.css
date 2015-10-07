@@ -1,5 +1,7 @@
 /*
  *= require foundation
+ *= require fancybox/jquery.fancybox.css
+ *
  *= require_directory ./common_2
  *= require application_foundation/header_footer
  *= require application_foundation/galleries

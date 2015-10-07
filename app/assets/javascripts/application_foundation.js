@@ -9,11 +9,10 @@
 //= require jquery-file-upload/jquery.fileupload
 //
 //= require tinymce
-//
-//= require lightbox
+// 
+//= require fancybox/jquery.fancybox.pack.js
 //
 //= require foundation/foundation
-//
 //
 //= require_self
 //= require ./photos_multiadd
@@ -25,5 +24,6 @@ var U = {};
 
 $(document).ready( function() {
     U.setup_accordion();    
+    $(".fancybox").fancybox();
 });
 
