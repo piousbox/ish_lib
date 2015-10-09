@@ -1,5 +1,6 @@
 // 
-//
+//= require global
+// 
 //= require jquery-1.7.1
 //= require jquery_ujs
 //= require jquery-ui.min
@@ -14,6 +15,9 @@
 //
 //= require foundation/foundation
 //
+// require handlebars.runtime
+// require_tree ./templates
+// 
 //= require_self
 //= require ./photos_multiadd
 //= require ./galleries

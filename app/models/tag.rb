@@ -29,6 +29,7 @@ class Tag
   embeds_many :newsitems
 
   belongs_to :site
+  validates :site, :presence => true
 
   default_scope ->{
     where({ :is_public => true, :is_trash => false }).order_by({ :name => :asc })

@@ -2,7 +2,7 @@ require 'string'
 class Gallery < AppModel2
 
   belongs_to :site
-  # validates :site, :presence => true
+  validates :site, :presence => true
 
   belongs_to :user
   validates :user, :presence => true
