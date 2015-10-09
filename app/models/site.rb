@@ -27,7 +27,7 @@ class Site
   field :is_trash, :type => Boolean, :default => false
   field :is_primary, :type => Boolean, :default => false
 
-  field :homepage_layout, :type => String, :default => 'blog'
+  field :homepage_layout, :type => String, :default => 'show'
   field :layout, :type => String, :default => 'application'
 
   has_many :reports
