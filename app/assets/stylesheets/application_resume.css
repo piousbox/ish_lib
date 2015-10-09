@@ -1,7 +1,8 @@
 /*
  *
- *= require ./reset-min
- *= require lightbox
+ *= require reset-min
+ *
+ *= require fancybox/jquery.fancybox.css
  *
  *= require ./common/utils
  *= require ./common/_ads

@@ -1,10 +1,3 @@
-if '#_=_' == window.location.hash
-  window.location.hash = ''
-  window.location.href = window.location.href.slice(0, -1)
-
-U.setup_accordion = ->
-  if $( "#accordion" ).length > 0
-    $( "#accordion" ).accordion()
 
 $(document).ready ->
 
@@ -22,7 +15,8 @@ $(document).ready ->
   if $(".tinymce").length > 0
     tinyMCE.init
       mode: "specific_textareas",
-      editor_selector: 'tinymce'
+      editor_selector: 'tinymce',
+      theme: 'advanced'
 
   if $("#temp_layout").length > 0
     MyApp.addInitializer (options) ->
@@ -34,4 +28,9 @@ $(document).ready ->
   if $('#carousel').length > 0
     $('#carousel').infiniteCarousel({})
 
+  if $( "#accordion" ).length > 0
+    $( "#accordion" ).accordion()
+
+  if $( ".fancybox" ).length > 0
+    $( ".fancybox" ).fancybox()
 

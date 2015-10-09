@@ -1,4 +1,0 @@
-
-$(document).ready ->
-  $('.addToggle').click ->
-    $(this).next().toggle()
