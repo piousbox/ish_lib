@@ -44,7 +44,10 @@ class Report
   
   belongs_to :tag
   belongs_to :city
+  
   belongs_to :site
+  validates :site, :presence => true
+  
   has_and_belongs_to_many :venues
   belongs_to :cities_user
   
