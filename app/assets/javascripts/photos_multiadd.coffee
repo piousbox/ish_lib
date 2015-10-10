@@ -1,6 +1,8 @@
 $ ->
   addPhoto = (file) ->
-    $('#photos').append HandlebarsTemplates['photos/show'](file)
+    console.log(file)
+    console.log('lets add file')
+    $('#photos').append('<li><img src="'+file.thumbnail_url+'" /></li>')
 
   removePhoto = (element) ->
     $.ajax
