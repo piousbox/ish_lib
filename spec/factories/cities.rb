@@ -1,4 +1,6 @@
+
 FactoryGirl.define do  
+
   factory :city, :class => City do
     name 'city name'
     name_en 'city name'

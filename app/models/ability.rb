@@ -15,8 +15,6 @@ class Ability
 
       can [ :new ], Message
 
-      can [ :create ], Newsitem
-
       can [ :upload, :driver, :set_profile_photo, :new_profile_photo ], Photo
       can [ :move, :edit, :update, :show ], Photo do |photo|
         photo.user == user
@@ -42,6 +40,8 @@ class Ability
       can [ :edit, :update, :show, :delete ], Report do |r|
         r.user == user
       end
+
+      can [ :newsitems_new, :newsitems_create ], Site
       
       can [ :organizer, :photos, :new_profile, :create_profile, :edit_profile, :update_profile ], User
       can [ :edit, :update, :update_profile ], User do |uu|
@@ -80,6 +80,7 @@ class Ability
         can [ :manage ], ManagerNewsitem
         can [ :manage ], ManagerPhoto
         can [ :manage ], ManagerReport
+        can [ :manage ], ManagerSite
         can [ :manage ], ManagerTag
         can [ :manage ], ManagerUser
         can [ :manage ], ManagerVenue

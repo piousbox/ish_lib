@@ -26,6 +26,16 @@ FactoryGirl.define do
     name 'technology'
     name_seo 'technology'
   end
+  
+  factory :tag_1, :parent => :tag do
+    name 'Tag-1'
+  end
+  factory :tag_2, :parent => :tag do
+    name 'Tag-2'
+  end
+  factory :tag_3, :parent => :tag do
+    name 'Tag-3'
+  end
 
 end
 

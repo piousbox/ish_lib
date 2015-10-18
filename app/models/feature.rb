@@ -11,12 +11,12 @@ class Feature
   field :link_path, :type => String
   field :partial_name, :type => String, :default => nil
 
-  has_one :photo
-
   field :weight, :type => Integer, :default => 10
   
-  belongs_to :report
-  belongs_to :gallery
+  has_one :photo
+  has_one :report
+  has_one :gallery
+  has_one :video
 
   embedded_in :venue
   embedded_in :site

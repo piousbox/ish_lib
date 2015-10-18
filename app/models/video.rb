@@ -26,10 +26,12 @@ class Video
   belongs_to :tag
   belongs_to :city
   belongs_to :site
-  accepts_nested_attributes_for :site, :tag, :city
-
+  validates :site, :presence => true
   belongs_to :user
   validates :user, :presence => true
+  
+  accepts_nested_attributes_for :site, :tag, :city
+
 
   def self.list
     [['', nil]] + Video.all.order_by( :name => :desc ).map { |item| [ item.name, item.id ] }

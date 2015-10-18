@@ -15,7 +15,8 @@ $(document).ready ->
   if $(".tinymce").length > 0
     tinymce.init
       mode: "specific_textareas",
-      editor_selector: 'tinymce'
+      editor_selector: 'tinymce',
+      plugins: 'link'
 
   if $("#temp_layout").length > 0
     MyApp.addInitializer (options) ->
