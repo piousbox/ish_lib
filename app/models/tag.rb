@@ -75,8 +75,4 @@ class Tag
     4
   end
   
-  def self.mobi
-    Tag.where( :name => 'Travel' ).first
-  end
-
 end
