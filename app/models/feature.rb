@@ -13,14 +13,19 @@ class Feature
 
   field :weight, :type => Integer, :default => 10
   
-  has_one :photo
-  has_one :report
-  has_one :gallery
-  has_one :video
+  belongs_to :photo
+  belongs_to :report
+  belongs_to :gallery
+  belongs_to :video
+  # has_one :photo
+  # has_one :report
+  # has_one :gallery
+  # has_one :video
 
   embedded_in :venue
   embedded_in :site
   embedded_in :city
+  embedded_in :tag
 
   def self.all
     self.order_by( :created_at => :desc )

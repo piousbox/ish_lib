@@ -6,6 +6,7 @@ class Newsitem
   embedded_in :user
   embedded_in :site
   embedded_in :city
+  embedded_in :tag
 
   belongs_to :photo
   belongs_to :report
