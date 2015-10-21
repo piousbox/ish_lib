@@ -29,7 +29,8 @@ class Photo
   field :is_public, :type => Boolean, :default => true  
   field :is_trash, :type => Boolean, :default => false
     
-  default_scope ->{ where({ :is_trash => false, :is_public => true }) }
+  # default_scope ->{ where({ :is_trash => false, :is_public => true }) }
+  default_scope ->{ where({ :is_trash => false }) }
 
   has_mongoid_attached_file :photo, 
     :styles => {
