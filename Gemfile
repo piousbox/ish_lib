@@ -35,7 +35,7 @@ gem 'cancan', '~> 1.5'
 gem "bcrypt-ruby", :require => "bcrypt"
 
 gem 'aws-sdk'
-gem 'paperclip', '0.0.9'
+gem 'paperclip'          # , '0.0.9' # dunno why the obsolete version. _vp_ 20160110
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem "aws-s3",            :require => "aws/s3"
 gem "recaptcha",         :require => "recaptcha/rails"
@@ -64,7 +64,6 @@ group :test do
   gem 'rspec-rails'
   gem 'rspec'
   gem 'shoulda-matchers'
-  gem 'capybara'
   gem 'ruby-prof'
 end
 

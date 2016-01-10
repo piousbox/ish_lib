@@ -12,12 +12,12 @@ be rake sitemaps:generate lang=en domain=travel-guide.mobi verbose=true
 
 == How to use ==
 
-link: app/assets, app/models, lib/, data/, vendor/assets
+link: app/assets, app/models, lib, data, vendor/assets, spec/factories
 
     #
     # link ish_lib
     #
-    %w{ app/models app/assets lib data }.each do |folder|
+    %w{ app/models app/assets lib data spec/factories }.each do |folder|
       link "#{app['deploy_to']}/current/#{folder}" do
         to "/home/#{app['owner']}/projects/ish_lib/current/#{folder}"
       end

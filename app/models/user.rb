@@ -113,5 +113,10 @@ class User
       User.unscoped.each { |u| u.remove }
     end
   end
-
+  
+  def generate_auth_token
+    payload = { user_id: self.id }
+    AuthToken.encode(payload)
+  end
+  
 end
