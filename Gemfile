@@ -1,12 +1,31 @@
+#
+# ish_lib gemfile
+#
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.3'
 
-gem 'mongoid'
+gem 'aws-sdk'
+gem "aws-s3",            :require => "aws/s3"
+gem "bcrypt-ruby", :require => "bcrypt"
+gem 'cancan', '~> 1.5'
+gem 'coffee-filter'
+gem 'devise'
+gem 'execjs'
+gem 'haml'
+gem 'htmlentities'
 gem 'kaminari'
-
-# gem 'activeadmin-mongoid', :git => 'https://github.com/piousbox/activeadmin-mongoid.git', :branch => 'fix_sidebar_disable'
-# gem 'mysql2', '0.3.11'
+gem 'mongoid'
+# gem 'mysql2', '~> 0.3.0'
+gem 'jquery-fileupload-rails'
+gem 'jquery-rails'
+gem 'libv8', '~> 3.11.8'
+gem 'nokogiri', '~> 1.5.9'
+gem 'paperclip'          # , '0.0.9' # dunno why the obsolete version. _vp_ 20160110
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem 'rails', '~> 3.2.3'
+gem "recaptcha",         :require => "recaptcha/rails"
+gem 'tinymce-rails'
+gem 'therubyracer', :require => 'libv8'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -14,41 +33,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'haml'
-gem 'tinymce-rails'
-gem 'htmlentities'
-
-#
-# javascript
-#
-gem 'coffee-filter'
-gem 'jquery-fileupload-rails'
-gem 'jquery-rails'
-gem 'execjs'
-gem 'libv8', '~> 3.11.8'
-gem 'therubyracer', :require => 'libv8'
-
-gem 'nokogiri', '~> 1.5.9'
-
-gem 'devise'
-gem 'cancan', '~> 1.5'
-gem "bcrypt-ruby", :require => "bcrypt"
-
-gem 'aws-sdk'
-gem 'paperclip'          # , '0.0.9' # dunno why the obsolete version. _vp_ 20160110
-gem "mongoid-paperclip", :require => "mongoid_paperclip"
-gem "aws-s3",            :require => "aws/s3"
-gem "recaptcha",         :require => "recaptcha/rails"
-
-gem 'mobile-fu'
-
 group :utils do
   gem "resque"
   gem 'simple-rss', :git => "git://github.com/piousbox/simple-rss.git"
 end
-
-# caching
-# gem 'dalli'
 
 group :production do
   gem 'unicorn'
