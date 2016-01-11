@@ -17,5 +17,12 @@ describe User do
     end
   end
 
+  it '#generate_auth_token' do
+    u = User.new
+    result = u.generate_auth_token
+    result.should_not eql nil
+    result.class.name.should eql 'String'
+  end
+  
 end
 

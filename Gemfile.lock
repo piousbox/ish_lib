@@ -114,6 +114,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jruby-pageant (1.1.1)
     json (1.8.3)
+    jwt (1.5.2)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -308,6 +309,7 @@ DEPENDENCIES
   htmlentities
   jquery-fileupload-rails
   jquery-rails
+  jwt
   kaminari
   libv8 (~> 3.11.8)
   minitest
