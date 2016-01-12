@@ -16,14 +16,21 @@ Gem::Specification.new do |s|
   s.email = "piousbox@gmail.com"
   s.executables = ["assets_precompile.sh", "branch_to_master.sh", "connect_production.sh", "cron-jobs.sh", "label_version.sh", "push-branch.sh", "rename_html.sh", "rspec.sh"]
   s.extra_rdoc_files = [
+    "LICENSE.txt",
     "README.md"
   ]
   s.files = [
+    ".bundle/config",
+    ".document",
     ".rbenv-version",
+    ".travis.yml",
+    "CHANGELOG.md",
     "Gemfile",
     "Gemfile.lock",
+    "LICENSE.txt",
     "README.md",
     "Rakefile",
+    "VERSION",
     "app/assets/images/.DS_Store",
     "app/assets/images/200x200/devops.png",
     "app/assets/images/200x200/html5.jpg",
@@ -458,14 +465,17 @@ Gem::Specification.new do |s|
     "app/assets/stylesheets/resume/resume.sass",
     "app/assets/stylesheets/resume/vars.sass",
     "app/assets/stylesheets/spec_runner.css",
+    "app/controllers/application_controller.rb",
     "app/models/ability.rb",
     "app/models/admin_user.rb",
     "app/models/app_model2.rb",
+    "app/models/auth_token.rb",
     "app/models/aux_model.rb",
     "app/models/cities_user.rb",
     "app/models/city.rb",
     "app/models/country.rb",
     "app/models/day.rb",
+    "app/models/decoded_auth_token.rb",
     "app/models/event.rb",
     "app/models/feature.rb",
     "app/models/gallery.rb",
@@ -538,6 +548,7 @@ Gem::Specification.new do |s|
     "config/memcached.yml",
     "config/mongoid.yml",
     "config/routes.rb",
+    "config/secrets.yml",
     "data/technologyNews",
     "data/wikitravel.org-popular-pages-test.htm",
     "data/wikitravel.org-popular-pages.htm",
@@ -734,6 +745,8 @@ Gem::Specification.new do |s|
     "doc/vendor/assets/themeforest/alpona/html/js/tiny_mce/license_txt.html",
     "doc/vendor/assets/themeforest/alpona/html/js/tiny_mce/plugins/style/readme_txt.html",
     "doc/vendor/assets/themeforest/alpona/icon-fonts/alpona31024/license_txt.html",
+    "ish.gemspec",
+    "ish_lib.gemspec",
     "lib/addressbookitems_tasks.rb",
     "lib/cities_tasks.rb",
     "lib/core_extensions.rb",
@@ -764,6 +777,8 @@ Gem::Specification.new do |s|
     "lib/venues_tasks.rb",
     "lib/videos_tasks.rb",
     "lib/wikitravel_tasks.rb",
+    "spec/data/photo_1.jpg",
+    "spec/data/photo_2.gif",
     "spec/factories/cities.rb",
     "spec/factories/galleries.rb",
     "spec/factories/photo.rb",
@@ -2878,7 +2893,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<core_extensions>, ["~> 0.0.4"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<activeresource>, [">= 0"])
-      s.add_runtime_dependency(%q<aws-sdk>, ["< 2.0"])
+      s.add_runtime_dependency(%q<aws-sdk>, [">= 0"])
       s.add_runtime_dependency(%q<aws-s3>, [">= 0"])
       s.add_runtime_dependency(%q<mongoid>, ["= 4.0.2"])
       s.add_runtime_dependency(%q<mongoid-history>, [">= 0"])
@@ -2899,8 +2914,8 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<nokogiri>, ["~> 1.5.9"])
       s.add_runtime_dependency(%q<devise>, [">= 0"])
       s.add_runtime_dependency(%q<cancan>, ["~> 1.5"])
+      s.add_runtime_dependency(%q<bcrypt-ruby>, [">= 0"])
       s.add_runtime_dependency(%q<kgio>, ["~> 2.8.0"])
-      s.add_runtime_dependency(%q<bcrypt-ruby>, ["= 3.1.1.rc1"])
       s.add_runtime_dependency(%q<recaptcha>, [">= 0"])
       s.add_runtime_dependency(%q<unicorn>, [">= 0"])
       s.add_runtime_dependency(%q<passenger>, [">= 0"])
@@ -2931,12 +2946,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<htmlentities>, [">= 0"])
       s.add_development_dependency(%q<resque>, [">= 0"])
       s.add_development_dependency(%q<minitest>, ["~> 4.7.5"])
+      s.add_development_dependency(%q<mocha>, [">= 0"])
+      s.add_development_dependency(%q<rspec-rails-mocha>, ["~> 0.3.1"])
     else
       s.add_dependency(%q<rails>, ["= 4.0.8"])
       s.add_dependency(%q<core_extensions>, ["~> 0.0.4"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<activeresource>, [">= 0"])
-      s.add_dependency(%q<aws-sdk>, ["< 2.0"])
+      s.add_dependency(%q<aws-sdk>, [">= 0"])
       s.add_dependency(%q<aws-s3>, [">= 0"])
       s.add_dependency(%q<mongoid>, ["= 4.0.2"])
       s.add_dependency(%q<mongoid-history>, [">= 0"])
@@ -2957,8 +2974,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<nokogiri>, ["~> 1.5.9"])
       s.add_dependency(%q<devise>, [">= 0"])
       s.add_dependency(%q<cancan>, ["~> 1.5"])
+      s.add_dependency(%q<bcrypt-ruby>, [">= 0"])
       s.add_dependency(%q<kgio>, ["~> 2.8.0"])
-      s.add_dependency(%q<bcrypt-ruby>, ["= 3.1.1.rc1"])
       s.add_dependency(%q<recaptcha>, [">= 0"])
       s.add_dependency(%q<unicorn>, [">= 0"])
       s.add_dependency(%q<passenger>, [">= 0"])
@@ -2989,13 +3006,15 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<htmlentities>, [">= 0"])
       s.add_dependency(%q<resque>, [">= 0"])
       s.add_dependency(%q<minitest>, ["~> 4.7.5"])
+      s.add_dependency(%q<mocha>, [">= 0"])
+      s.add_dependency(%q<rspec-rails-mocha>, ["~> 0.3.1"])
     end
   else
     s.add_dependency(%q<rails>, ["= 4.0.8"])
     s.add_dependency(%q<core_extensions>, ["~> 0.0.4"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<activeresource>, [">= 0"])
-    s.add_dependency(%q<aws-sdk>, ["< 2.0"])
+    s.add_dependency(%q<aws-sdk>, [">= 0"])
     s.add_dependency(%q<aws-s3>, [">= 0"])
     s.add_dependency(%q<mongoid>, ["= 4.0.2"])
     s.add_dependency(%q<mongoid-history>, [">= 0"])
@@ -3016,8 +3035,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<nokogiri>, ["~> 1.5.9"])
     s.add_dependency(%q<devise>, [">= 0"])
     s.add_dependency(%q<cancan>, ["~> 1.5"])
+    s.add_dependency(%q<bcrypt-ruby>, [">= 0"])
     s.add_dependency(%q<kgio>, ["~> 2.8.0"])
-    s.add_dependency(%q<bcrypt-ruby>, ["= 3.1.1.rc1"])
     s.add_dependency(%q<recaptcha>, [">= 0"])
     s.add_dependency(%q<unicorn>, [">= 0"])
     s.add_dependency(%q<passenger>, [">= 0"])
@@ -3048,6 +3067,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<htmlentities>, [">= 0"])
     s.add_dependency(%q<resque>, [">= 0"])
     s.add_dependency(%q<minitest>, ["~> 4.7.5"])
+    s.add_dependency(%q<mocha>, [">= 0"])
+    s.add_dependency(%q<rspec-rails-mocha>, ["~> 0.3.1"])
   end
 end
 
