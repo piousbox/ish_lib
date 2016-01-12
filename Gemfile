@@ -19,7 +19,6 @@ gem 'mongo_session_store-rails4'
 gem 'paperclip', ['>= 3.4', '!= 4.3.0']
 gem 'kaminari'
 gem 'haml'
-gem 'sass'
 gem 'formtastic'
 gem 'coffee-filter'
 gem 'jquery-rails'
@@ -40,18 +39,8 @@ gem 'newrelic_rpm'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 
-group :test do
-  gem 'rspec-rails'
-  gem 'rspec'
-  gem 'rspec-mocks'
-  gem 'factory_girl_rails'  
-  gem 'shoulda'
-  gem 'shoulda-matchers'
-  gem 'ruby-prof'
-  gem 'simplecov', :require => false
-end
 
-group :development, :development_production, :test do
+group :development, :development_production, :test, :util do
   gem 'net-ssh', '2.4.0'
   gem 'capybara'
   gem 'quiet_assets'
@@ -59,16 +48,24 @@ group :development, :development_production, :test do
   gem 'delayed_job_mongoid'
   gem 'hpricot'
   gem 'ruby_parser'
-end
-
-group :test, :development, :development_production, :util do
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'rdoc'
+  gem 'bundler'
+  gem 'jeweler'
+  gem 'rspec-rails'
+  gem 'rspec'
+  gem 'rspec-mocks'
+  gem 'factory_girl_rails'  
+  gem 'ruby-prof'
+  gem 'simplecov', :require => false
   gem 'simple-rss', :git => "git://github.com/piousbox/simple-rss.git"
   gem 'htmlentities' # need with simple-rss
   gem 'resque'
   gem 'minitest', '~> 4.7.5'
 end
 
-group :assets, :development_production do
+group :assets do
   gem 'sass-rails',   '~> 4.0'
   gem 'sass'
   gem 'coffee-rails'

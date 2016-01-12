@@ -23,7 +23,3 @@ link: app/assets, app/models, lib, data, vendor/assets, spec/factories
       end
     end
 
-== Version ==
-
-master-0.7.1
-
