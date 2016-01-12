@@ -3,3 +3,7 @@ rvm:
  - 2.0.0
 cache: bundler 
 script: bundle exec rspec spec -f documentation
+addons:
+  apt:
+    packages:
+    - mongodb-org
