@@ -22,8 +22,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "ish"
-  gem.homepage = "http://github.com/piousbox/ish"
+  gem.name = "ish_lib"
+  gem.homepage = "http://github.com/piousbox/ish_lib"
   gem.license = "MIT"
   gem.summary = %Q{utilities for microsites_cluster}
   gem.description = %Q{models, specs of models, and assets for microsites_cluster}
@@ -53,7 +53,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "ish #{version}"
+  rdoc.title = "ish_lib #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
