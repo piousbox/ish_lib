@@ -2,6 +2,8 @@ require 'spec_helper'
 describe Tag do
 
   before :each do
+    setup_sites
+    
     Tag.unscoped.each { |t| t.remove }
     FactoryGirl.create :tag1
     FactoryGirl.create :tag2
@@ -10,7 +12,7 @@ describe Tag do
   describe 'tags' do
 
     it 'generates name_seo before create' do
-      r = Tag.new :name => 'lalala'
+      r = Tag.new :name => 'lalala', :site => @site
       r.save
       new = Tag.where( :name => r.name ).first
       new.name_seo.blank?.should eql false

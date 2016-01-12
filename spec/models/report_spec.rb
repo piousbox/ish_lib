@@ -6,6 +6,8 @@ describe Report do
   before :each do
     Report.all.each { |r| r.remove }
 
+    setup_sites
+
     User.all.each { |u| u.remove }
     @user = FactoryGirl.create :user
     @anon = FactoryGirl.create :anon
@@ -14,7 +16,7 @@ describe Report do
 
   describe 'callbacks' do
     it 'saves username' do
-      g = Report.new :name => 'asdf', :name_seo => 'wrgbdsfg', :user => @user, :username => @user.username
+      g = Report.new :name => 'asdf', :name_seo => 'wrgbdsfg', :user => @user, :username => @user.username, :site => @site
       flag = g.save
       flag.should eql true
       g.username.should_not eql nil
@@ -26,7 +28,7 @@ describe Report do
       expected_names = ['asdf', 'aasdf', 'asdf-ff', 'asdf-sdf-sdf' ]
       names.each_with_index do |name, idx|
         g = nil
-        g = Report.new :name => name, :user => @user, :username => @user.username, :name_seo => expected_names[idx]
+        g = Report.new :name => name, :user => @user, :username => @user.username, :name_seo => expected_names[idx], :site => @site
         flag = g.save
         flag.should eql true
         # g.name_seo.should eql expected_names[idx]

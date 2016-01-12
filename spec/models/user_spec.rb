@@ -4,6 +4,8 @@ require 'spec_helper'
 describe User do
 
   before :each do
+    setup_sites
+    
     User.clear
     @user = FactoryGirl.create :user
   end
@@ -17,12 +19,12 @@ describe User do
     end
   end
 
-  it '#generate_auth_token' do
-    u = User.new
-    result = u.generate_auth_token
-    result.should_not eql nil
-    result.class.name.should eql 'String'
-  end
+#  it '#generate_auth_token' do
+#    u = User.new
+#    result = u.generate_auth_token
+#    result.should_not eql nil
+#    result.class.name.should eql 'String'
+#  end
   
 end
 

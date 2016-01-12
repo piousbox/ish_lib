@@ -1,9 +1,14 @@
 
+require 'simplecov'
 
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
+
+require 'capybara/rails'
+require 'capybara/rspec'
+
 require 'factory_girl'
 
 # Mongo::Logger.logger = ::Logger.new('log/mongo.log')
@@ -142,6 +147,15 @@ def setup_merit_badges
   @merit_badge = FactoryGirl.create :merit_badge
 end
 
+def setup_sites
+  @request ||= FakeRequest.new
+  Site.all.each { |s| s.remove }
+  @site = FactoryGirl.create :site
+  @site_ru = FactoryGirl.create :site_ru
+  @site_pt = FactoryGirl.create :site_pt
+  @request.host = 'piousbox.com'
+end
+
 def setup_users
   User.all.each { |u| u.remove }
   @user = FactoryGirl.create :user
@@ -167,6 +181,8 @@ class Class
   end
 end
 
-
+class FakeRequest
+  attr_accessor :host
+end
 
 
