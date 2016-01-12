@@ -1,79 +1,72 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.3'
-
-gem 'mongoid'
+gem 'rails', '4.0.8'
+gem "core_extensions", "~> 0.0.4"
+gem 'activesupport'
+gem 'activeresource'
+gem 'aws-sdk'
+gem "aws-s3",            :require => "aws/s3"
+gem 'mongoid', '4.0.2'
+gem 'mongoid-history'
+gem 'bson'
+gem "moped", github: "mongoid/moped"
+gem 'mongoid_paranoia', :github => 'simi/mongoid-paranoia'
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem 'mongo_session_store-rails4'
+gem 'paperclip', ['>= 3.4', '!= 4.3.0']
 gem 'kaminari'
-
-# gem 'activeadmin-mongoid', :git => 'https://github.com/piousbox/activeadmin-mongoid.git', :branch => 'fix_sidebar_disable'
-# gem 'mysql2', '0.3.11'
-
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
-
 gem 'haml'
-gem 'tinymce-rails'
-gem 'htmlentities'
-
-#
-# javascript
-#
+gem 'formtastic'
 gem 'coffee-filter'
-gem 'jquery-fileupload-rails'
 gem 'jquery-rails'
-gem 'execjs'
+gem 'jbuilder'
 gem 'libv8', '~> 3.11.8'
 gem 'therubyracer', :require => 'libv8'
-
 gem 'nokogiri', '~> 1.5.9'
-
 gem 'devise'
 gem 'cancan', '~> 1.5'
 gem "bcrypt-ruby", :require => "bcrypt"
-
-gem 'aws-sdk'
-gem 'paperclip'
-gem "mongoid-paperclip", :require => "mongoid_paperclip"
-gem "aws-s3",            :require => "aws/s3"
+gem 'kgio', '~> 2.8.0'
 gem "recaptcha",         :require => "recaptcha/rails"
+gem 'unicorn'
+gem 'passenger'
+gem 'tzinfo'
+gem 'eventmachine'
+gem 'newrelic_rpm'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
 
-gem 'mobile-fu'
-
-group :utils do
-  gem "resque"
-  gem 'simple-rss', :git => "git://github.com/piousbox/simple-rss.git"
-end
-
-# caching
-# gem 'dalli'
-
-group :production do
-  gem 'unicorn'
-  # gem 'passenger'
-end
-
-group :test do
-  gem 'factory_girl_rails'
-  gem 'minitest'
-  gem 'mocha'
-  gem 'rspec-rails-mocha', '~> 0.3.1'
-  gem 'shoulda'
-  gem 'rspec-rails'
-  gem 'rspec'
-  gem 'shoulda-matchers'
-  gem 'ruby-prof'
-end
-
-group :development, :test do
+group :development, :development_production, :test, :util do
   gem 'net-ssh', '2.4.0'
   gem 'capybara'
-  gem 'capistrano'
   gem 'quiet_assets'
   gem 'thin'
   gem 'delayed_job_mongoid'
   gem 'hpricot'
+  gem 'ruby_parser'
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'rdoc'
+  gem 'bundler'
+  gem 'jeweler'
+  gem 'rspec-rails'
+  gem 'rspec'
+  gem 'rspec-mocks'
+  gem 'factory_girl_rails'  
+  gem 'ruby-prof'
   gem 'simplecov', :require => false
+  gem 'simple-rss', :git => "git://github.com/piousbox/simple-rss.git"
+  gem 'htmlentities' # need with simple-rss
+  gem 'resque'
+  gem 'minitest', '~> 4.7.5'
+  gem 'mocha'
+  gem 'rspec-rails-mocha', '~> 0.3.1'
+end
+
+group :assets do
+  gem 'sass-rails',   '~> 4.0'
+  gem 'sass'
+  gem 'coffee-rails'
+  gem 'uglifier', '>= 1.0.3'
+  gem 'handlebars_assets'
 end

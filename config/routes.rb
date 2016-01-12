@@ -56,9 +56,6 @@ Microsites2::Application.routes.draw do
     get 'reports/show/:name_seo' => redirect { |request, params| "#{params[:locale]}/reports/view/#{params[:name_sep]}" }
     put '/reports/:id', :to => 'reports#update', :as => :update_report
     get 'reports', :to => 'reports#index', :as => :reports
-    # match 'reports/promo/:name_seo' => redirect { |params, request| "reports/view/#{params[:name_seo]}" }
-    # get 'reports/page/:reports_page', :to => 'reports#index'
-    # resources :reports
     
     get 'galleries', :to => 'galleries#index', :as => :galleries
     # get 'galleries/show/:galleryname/:photo_idx', :to => redirect { |params, request|
@@ -109,25 +106,7 @@ Microsites2::Application.routes.draw do
     # }
     # get "sites/:domainname.json", :to => "sites#show", :as => :site, :format => :json, :constraints => { :domainname => /.*/, :format => /json/ }
 
-    match '*other', :to => 'errors#five_hundred'
   end # end locale
-
-  #
-  # !!! important for angular.
-  #
-  get 'cities/travel-to/:cityname', :to => 'cities#profile'
-  get 'cities/travel-to', :to => 'cities#index'
-  get 'reports', :to => 'reports#index', :as => :reports
-  get 'reports/view/:name_seo', :to => 'reports#show', :as => :report
-  get 'venues', :to => 'venues#index', :as => :venues
-  get 'venues/show/:name_seo', :to => 'venues#show', :as => :venue
-
-  # resources :venues
-
-  #
-  # new non-localed stuff
-  #
-  # get 'sitemap', :to => 'utils/sitemaps#sitemap', :as => :sitemap
 
   #
   # important non-locale-scoped stuff
@@ -143,33 +122,5 @@ Microsites2::Application.routes.draw do
   #   "http://piousbox.com/en/galleries/show/#{params[:galleryname]}/#{params[:number]}" 
   # }, :constraints => { :format => /html/ }
   get '/cities', :to => 'cities#index'
-
-  #
-  # old legacy stuff
-  #
-  get 'google4b2e82b4dbbf505d', :to => 'utils/verification#one'
-  get 'index.php/events/calendar/*everything' => redirect { |params, request| '/' }
-  get 'index.php/events/view/*everything' => redirect { |params, request| '/' }
-  get 'index.php/events/in/:cityname' => redirect { |params, request| "/cities/travel-to/#{params[:cityname]}" }
-  get 'index.php' => redirect { |params, request| '/' }
-  get 'venue_types/*everything' => redirect { |params, request| '/' }
-  get 'venue_types' => redirect { |params, request| '/' }
-
-  ##
-  ## admin &&
-  ## old redirects
-  ##
-  match 'admin/*everything' => redirect { |params, request| '/' }
-  match 'admin' => redirect { |params, request| '/' }
-  match 'dictionaryitems/*everything' => redirect { |params, request| '/' }
-  match 'dictionaryitems' => redirect { |params, request| '/' }
-  match 'helps/*everything' => redirect { |params, request| '/' }
-  match 'helps' => redirect { |params, request| '/' }
-  # match 'events/*everything' => redirect { |params, request| '/' }
-  # match 'events' => redirect { |params, request| '/' }
-
-  # add scope
-  match '*other' => redirect { |params, request| "/en/#{params[:other]}" }
-  match '/' => redirect { |params, request| "/en/" }
 
 end

@@ -1,14 +1,20 @@
+
 require 'spec_helper'
+
 describe Video do
+
   before :each do
-    Video.all.each { |u| u.remove }   
+    setup_sites
+    
     User.all.each { |u| u.remove }
     @user = FactoryGirl.create :user
+
+    Video.all.each { |u| u.remove }   
   end
 
   describe 'videos' do
     it 'should be ok' do
-      v = Video.new
+      v = Video.new :site => @site
       v.youtube_id = '1'
       v.user = @user
       v.save.should eql true
