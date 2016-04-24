@@ -15,8 +15,6 @@ gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'mongo_session_store-rails4'
 gem 'paperclip', ['>= 3.4', '!= 4.3.0']
 gem 'kaminari'
-gem 'haml'
-gem 'formtastic'
 gem 'coffee-filter'
 gem 'jquery-rails'
 gem 'jbuilder'
@@ -28,11 +26,8 @@ gem 'cancan', '~> 1.5'
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'kgio', '~> 2.8.0'
 gem "recaptcha",         :require => "recaptcha/rails"
-gem 'unicorn'
-gem 'passenger'
 gem 'tzinfo'
 gem 'eventmachine'
-gem 'newrelic_rpm'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 
