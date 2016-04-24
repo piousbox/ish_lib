@@ -341,6 +341,7 @@ DEPENDENCIES
   aws-sdk
   bcrypt-ruby
   bson
+  builder
   bundler
   cancan (~> 1.5)
   capybara

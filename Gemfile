@@ -7,6 +7,7 @@ gem 'activesupport'
 gem 'activeresource'
 gem 'aws-sdk'
 gem "aws-s3",            :require => "aws/s3"
+gem 'builder'
 gem 'mongoid', '4.0.2'
 gem 'mongoid-history'
 gem 'bson'
