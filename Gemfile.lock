@@ -373,6 +373,7 @@ DEPENDENCIES
   paperclip (>= 3.4, != 4.3.0)
   quiet_assets
   rails (= 4.0.8)
+  rake (>= 10.4.2)
   rdoc
   recaptcha
   resque

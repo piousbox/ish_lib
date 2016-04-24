@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rake', '>= 10.4.2'
 gem 'rails', '4.0.8'
 gem "core_extensions", "~> 0.0.4"
 gem 'activesupport'
