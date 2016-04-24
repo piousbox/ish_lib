@@ -9,3 +9,6 @@
 
 ## 0.0.3
 * preparing to have this as a gem
+## 0.0.4
+* some model files are in
+

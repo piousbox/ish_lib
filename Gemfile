@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'jbuilder'
 gem 'libv8', '~> 3.11.8'
 gem 'therubyracer', :require => 'libv8'
-gem 'nokogiri', '~> 1.5.9'
+gem 'nokogiri', '> 1.5.9'
 gem 'devise'
 gem 'cancan', '~> 1.5'
 gem "bcrypt-ruby", :require => "bcrypt"

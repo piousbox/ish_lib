@@ -126,7 +126,7 @@ class Ability
 
     can [ :new ], Review
        
-    can [ :show, :newsitems, :features, :newsitems ],  Site
+    can [ :show, :newsitems, :features, :newsitems, :create_missing ],  Site
 
     can [ :index ], Tag
     can [ :show ], Tag do |t|

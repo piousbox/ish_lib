@@ -18,6 +18,12 @@ describe Site do
     end
   end
 
+  it 'default and existing properties of site', :focus => true do
+    site = Site.new
+    site.is_private.should eql false
+    site.lang.should eql :en
+  end
+  
   describe 'class methods' do
     it 'lists' do
       Site.list.should_not eql nil
@@ -41,7 +47,6 @@ describe Site do
       result = result.newsitems[0]
       result.video_id.should eql video.id
     end
-
   end
   
 end

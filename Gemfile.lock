@@ -383,7 +383,7 @@ DEPENDENCIES
   moped!
   net-ssh (= 2.4.0)
   newrelic_rpm
-  nokogiri (~> 1.5.9)
+  nokogiri (> 1.5.9)
   paperclip (>= 3.4, != 4.3.0)
   passenger
   quiet_assets
