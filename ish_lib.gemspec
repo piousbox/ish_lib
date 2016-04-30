@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "ish_lib.gemspec",
     "lib/ish_lib.rb",
     "test/helper.rb",
     "test/test_ish_lib.rb"
