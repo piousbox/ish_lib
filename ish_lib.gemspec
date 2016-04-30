@@ -6,12 +6,12 @@
 
 Gem::Specification.new do |s|
   s.name = "ish_lib"
-  s.version = "0.0.5"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Victor Piousbox"]
-  s.date = "2016-04-24"
+  s.date = "2016-04-30"
   s.description = "models, specs of models, and assets for microsites_cluster"
   s.email = "piousbox@gmail.com"
   s.executables = ["assets_precompile.sh", "branch_to_master.sh", "connect_production.sh", "cron-jobs.sh", "label_version.sh", "push-branch.sh", "rename_html.sh", "rspec.sh"]
