@@ -6,7 +6,7 @@
 
 Gem::Specification.new do |s|
   s.name = "ish_lib"
-  s.version = "0.0.3"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
@@ -745,7 +745,6 @@ Gem::Specification.new do |s|
     "doc/vendor/assets/themeforest/alpona/html/js/tiny_mce/license_txt.html",
     "doc/vendor/assets/themeforest/alpona/html/js/tiny_mce/plugins/style/readme_txt.html",
     "doc/vendor/assets/themeforest/alpona/icon-fonts/alpona31024/license_txt.html",
-    "ish.gemspec",
     "ish_lib.gemspec",
     "lib/addressbookitems_tasks.rb",
     "lib/cities_tasks.rb",

@@ -52,7 +52,7 @@ class Ability
 
       can [ :new, :create ], Video
 
-      # manager
+      # manager, group_id 1
       #
       if user[:group_id] <= 2        
         can [ :manage ], CitiesUser
@@ -126,7 +126,9 @@ class Ability
 
     can [ :new ], Review
        
-    can [ :show, :newsitems, :features, :newsitems ],  Site
+    can [ :show, :newsitems, :features, :newsitems, :create_missing, :register ],  Site do |s|
+      !s.is_private
+    end
 
     can [ :index ], Tag
     can [ :show ], Tag do |t|
