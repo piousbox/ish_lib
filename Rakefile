@@ -21,7 +21,10 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{models and assets for piousbox.com}
   gem.email = "piousbox@gmail.com"
   gem.authors = ["Victor Piousbox"]
+  
   # dependencies defined in Gemfile
+  gem.add_dependency 'kaminari'
+  
 end
 Jeweler::RubygemsDotOrgTasks.new
 
