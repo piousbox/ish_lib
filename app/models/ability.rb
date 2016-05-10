@@ -113,6 +113,8 @@ class Ability
 
     can [ :error500, :search ], Manager
 
+    can [ :ipn ], Paypal::Ipn
+    
     # has to be outside user auth b/c the uploading component is ajax.
     can [ :new, :create, :index, :do_upload, :not_found ], Photo
     can [ :show ], Photo do |photo|

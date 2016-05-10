@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+git push origin :tags/master-resume
+git tag -d master-resume
+git tag master-resume
+git push origin --tags
+
+echo ok
