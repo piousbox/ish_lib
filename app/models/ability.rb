@@ -43,7 +43,7 @@ class Ability
 
       can [ :newsitems_new, :newsitems_create ], Site
       
-      can [ :organizer, :photos, :new_profile, :create_profile, :edit_profile, :update_profile ], User
+      can [ :organizer, :photos, :new_profile, :create_profile, :edit_profile, :update_profile, :scratchpad ], User
       can [ :edit, :update, :update_profile ], User do |uu|
         uu == user
       end
