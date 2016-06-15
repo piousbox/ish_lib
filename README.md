@@ -1,6 +1,8 @@
 
 == About ==
 
+OBSOLETE _vp_ 20160513
+
 ish_lib powers the microsites2, microsites3 frameworks.
 
 It looks like branch master should be deployed. If you deploy branch master-0.7.0, merge it to master, then deploy master.
